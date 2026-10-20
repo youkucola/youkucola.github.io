@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>用AoE2ScenarioParser给官方战役开启256x科技 - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="上篇改的是 AoE2DE\resources\_common\xs\x256tech.xs，那是共享脚本，所有引用它的场景都会跟着变。这次换一条路：不动共享脚本，只把 x256tech 这个脚本名写进单个场景文件，让游戏在加载这一关时把 256x 科技挂上，其他关卡不受影响。 以官方帖木儿战役第一关为例，全程只改一个字段。 官方战役的场景是打包的官方战役的场景没有散落在硬盘上，全部打包在 AoE2"><meta property="og:type" content="blog"><meta property="og:title" content="youkucola"><meta property="og:url" content="https://yokuucola.github.io/"><meta property="og:site_name" content="youkucola"><meta property="og:description" content="上篇改的是 AoE2DE\resources\_common\xs\x256tech.xs，那是共享脚本，所有引用它的场景都会跟着变。这次换一条路：不动共享脚本，只把 x256tech 这个脚本名写进单个场景文件，让游戏在加载这一关时把 256x 科技挂上，其他关卡不受影响。 以官方帖木儿战役第一关为例，全程只改一个字段。 官方战役的场景是打包的官方战役的场景没有散落在硬盘上，全部打包在 AoE2"><meta property="og:locale" content="zh"><meta property="og:image" content="https://yokuucola.github.io/img/og_image.png"><meta property="article:published_time" content="2026-10-20T06:40:00.000Z"><meta property="article:modified_time" content="2026-10-20T06:30:03.185Z"><meta property="article:author" content="youkucola"><meta property="article:tag" content="Python"><meta property="article:tag" content="帝国时代2"><meta property="article:tag" content="游戏修改"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yokuucola.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.youkucola.icu/2026/10/20/2026-10-20-%E7%94%A8AoE2ScenarioParser%E7%BB%99%E5%AE%98%E6%96%B9%E6%88%98%E5%BD%B9%E5%BC%80%E5%90%AF256x%E7%A7%91%E6%8A%80/"},"headline":"Hexo","image":["https://blog.youkucola.icu/img/og_image.png"],"datePublished":"2026-10-20T06:40:00.000Z","dateModified":"2026-10-20T06:30:03.185Z","author":{"@type":"Person","name":"youkucola"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"description":"上篇改的是 AoE2DE\\resources\\_common\\xs\\x256tech.xs，那是共享脚本，所有引用它的场景都会跟着变。这次换一条路：不动共享脚本，只把 x256tech 这个脚本名写进单个场景文件，让游戏在加载这一关时把 256x 科技挂上，其他关卡不受影响。 以官方帖木儿战役第一关为例，全程只改一个字段。 官方战役的场景是打包的官方战役的场景没有散落在硬盘上，全部打包在 AoE2"}</script><link rel="canonical" href="https://blog.youkucola.icu/2026/10/20/2026-10-20-%E7%94%A8AoE2ScenarioParser%E7%BB%99%E5%AE%98%E6%96%B9%E6%88%98%E5%BD%B9%E5%BC%80%E5%90%AF256x%E7%A7%91%E6%8A%80/"><meta name="referrer" content="no-referrer-when-downgrade"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/6.0.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdnjs.loli.net/ajax/libs/pace/1.2.4/pace.min.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/friend">友链</a></div><div class="navbar-end"><a class="navbar-item search" title="検索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><!--!--><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2026-10-20  <a class="commentCountImg" href="/2026/10/20/2026-10-20-%E7%94%A8AoE2ScenarioParser%E7%BB%99%E5%AE%98%E6%96%B9%E6%88%98%E5%BD%B9%E5%BC%80%E5%90%AF256x%E7%A7%91%E6%8A%80/#comment-container"><span class="display-none-class">/2026/10/20/2026-10-20-用AoE2ScenarioParser给官方战役开启256x科技/</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="27d722740fe517b4da1fd868eb0fe1a4">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>10 m  <i class="fas fa-pencil-alt"> </i>1.5 k</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>回の訪問</span></div></div><h1 class="title is-3 is-size-4-mobile">用AoE2ScenarioParser给官方战役开启256x科技</h1><div class="content"><p>上篇改的是 <code>AoE2DE\resources\_common\xs\x256tech.xs</code>，那是共享脚本，所有引用它的场景都会跟着变。这次换一条路：不动共享脚本，只把 <code>x256tech</code> 这个脚本名写进单个场景文件，让游戏在加载这一关时把 256x 科技挂上，其他关卡不受影响。</p>
+<p>以官方帖木儿战役第一关为例，全程只改一个字段。</p>
+<h2 id="官方战役的场景是打包的"><a href="#官方战役的场景是打包的" class="headerlink" title="官方战役的场景是打包的"></a>官方战役的场景是打包的</h2><p>官方战役的场景没有散落在硬盘上，全部打包在 <code>AoE2DE\resources\_common\campaign\kcam1.aoe2campaign</code> 里。从文件里能读出 <code>K1_Tamerlane_1.aoe2scenario</code> 到 <code>K1_Tamerlane_6.aoe2scenario</code> 六个文件名，后面跟着压缩过的场景数据。</p>
+<p>所以不能只生成一个 <code>.aoe2scenario</code> 丢进 campaign 目录了事 —— 得先把这个场景从包里拆成独立文件，改完再重新打包回去。</p>
+<h2 id="场景靠-script-name-挂脚本"><a href="#场景靠-script-name-挂脚本" class="headerlink" title="场景靠 script_name 挂脚本"></a>场景靠 script_name 挂脚本</h2><p><code>.aoe2scenario</code> 的 Map 段里有个 <code>script_name</code> 字段，记录这个场景要加载的 XS 脚本名。官方这几关的这个字段是空的：用解析器读原文件，<code>xs_manager.script_name</code> 打印出来是 <code>&#39;&#39;</code>。空着就不带任何脚本。</p>
+<p>填上 <code>x256tech</code>，游戏加载这一关时就会去 <code>xs</code> 目录找同名脚本，也就是 <code>AoE2DE\resources\_common\xs\x256tech.xs</code> —— 上篇那份只对玩家 1 生效的版本。</p>
+<p>这也解释了这条路和上篇的关系：上篇是改脚本内容（谁生效），本篇是改引用（哪一关生效）。两件事正交，可以各改各的。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li>Python 3（实测 3.14）+ <code>pip install AoE2ScenarioParser</code>（实测 0.9.8）</li>
+<li>把场景从战役里拆出来：游戏内 场景编辑器 → 战役编辑器，战役文件名填 <code>kcam1</code>，加载。拆出来的场景落在用户目录：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\&lt;用户名&gt;\Games\Age of Empires 2 DE\&lt;SteamID&gt;\resources\_common\scenario\</span><br></pre></td></tr></table></figure>
+
+<p>  帖木儿战役是六关，这里会看到 <code>K1_Tamerlane_1.aoe2scenario</code> 到 <code>K1_Tamerlane_6.aoe2scenario</code>。</p>
+<ul>
+<li>把第 1 关复制一份、改名成 <code>K1_Tamerlane_1.aoe2scenario.bak</code> 当原件备份 —— 脚本读 <code>.bak</code>、写 <code>_</code>，原件不动。</li>
+</ul>
+<h2 id="改"><a href="#改" class="headerlink" title="改"></a>改</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> AoE2ScenarioParser.scenarios.aoe2_de_scenario <span class="keyword">import</span> AoE2DEScenario</span><br><span class="line">scenario = AoE2DEScenario.from_file(<span class="string">&#x27;K1_Tamerlane_1.aoe2scenario.bak&#x27;</span>)</span><br><span class="line">scenario.xs_manager.script_name = <span class="string">&#x27;x256tech&#x27;</span></span><br><span class="line">scenario.write_to_file(<span class="string">&#x27;K1_Tamerlane_1.aoe2scenario&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>三行各干一件事：</p>
+<ul>
+<li><code>from_file</code> 把整个场景解析进内存，地图、单位、触发器全在里面（这一关是 42 个触发器）。</li>
+<li><code>xs_manager.script_name</code> 直接对应 Map 段的 <code>script_name</code> 字段，写脚本名、不带 <code>.xs</code> 后缀。</li>
+<li><code>write_to_file</code> 重新序列化落盘。</li>
+</ul>
+<p>写出来的文件比原件小：59,741 → 55,797 字节。这不是丢内容，是解析器按自己的结构把场景重写了一遍，触发器、单位都在。要确认改动生效，读回来打印一眼：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> AoE2ScenarioParser.scenarios.aoe2_de_scenario <span class="keyword">import</span> AoE2DEScenario</span><br><span class="line">s = AoE2DEScenario.from_file(<span class="string">&#x27;K1_Tamerlane_1_.aoe2scenario&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>(s.xs_manager.script_name))   <span class="comment"># &#x27;x256tech&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">len</span>(s.trigger_manager.triggers))  <span class="comment"># 42</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="重新打包"><a href="#重新打包" class="headerlink" title="重新打包"></a>重新打包</h2><p>游戏内 场景编辑器 → 战役编辑器：加载 <code>kcam1</code>，把第 1 关的位置换成刚生成的 <code>K1_Tamerlane_1_.aoe2scenario</code>（用 添加&#x2F;删除 调整场景列表），保存成 <code>kcam1.aoe2campaign</code>。编辑器保存到用户目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...\Games\Age of Empires 2 DE\&lt;SteamID&gt;\resources\_common\campaign\kcam1.aoe2campaign</span><br></pre></td></tr></table></figure>
+
+<p>再复制到游戏目录覆盖：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AoE2DE\resources\_common\campaign\kcam1.aoe2campaign</span><br></pre></td></tr></table></figure>
+
+<p>覆盖前先备份游戏目录里的原件。实测原始 <code>kcam1.aoe2campaign</code> 是 373,474 字节，重新打包后 369,530 字节，小了 3,944 —— 正好等于第 1 关场景重写后小掉的 3,944 字节，包里只动了这一关。</p>
+<p>然后进战役 → 帖木儿 → 第一关，科技可以重复研究了。</p>
+<h2 id="另一条路：把脚本直接塞进场景"><a href="#另一条路：把脚本直接塞进场景" class="headerlink" title="另一条路：把脚本直接塞进场景"></a>另一条路：把脚本直接塞进场景</h2><p>解析器还有个 <code>xs_manager.add_script()</code>：它把整段 XS 文本写进一个 Script Call 效果，游戏启动时落到用户目录的 <code>xs\default0.xs</code> 里。好处是脚本跟着场景文件走，对方没有 <code>x256tech.xs</code> 也能生效；代价是脚本内容进了场景二进制，还多一个触发器。</p>
+<p>这里只是引用现成的 <code>x256tech.xs</code>，自己单机玩，用 <code>script_name</code> 更省事。要分享给别人、或者做联机（观战端拿不到本地脚本文件），<code>add_script</code> 才是稳的那条。</p>
+<h2 id="没生效先查这几处"><a href="#没生效先查这几处" class="headerlink" title="没生效先查这几处"></a>没生效先查这几处</h2><ul>
+<li><code>resources\_common\xs\x256tech.xs</code> 是否还在。脚本名和文件名要严格对上，注意 <code>script_name</code> 里不带扩展名。</li>
+<li>覆盖的是游戏目录那份 <code>kcam1.aoe2campaign</code>，不是用户目录那份。游戏读的是资源目录。</li>
+<li>场景里真的写进去了没：读回 <code>K1_Tamerlane_1_.aoe2scenario</code> 打印 <code>script_name</code>。</li>
+<li>游戏更新或 Steam 校验文件会还原 <code>resources</code> 下的东西，覆盖后又被还原的话，表现就是「什么都没发生」。</li>
+<li>上篇提过的坑这次仍然适用：如果 <code>x256tech.xs</code> 里 <code>xsGetPlayerNumberOfTechs</code> 传的是未赋值的 <code>player</code>，遍历范围不确定，两处都写死 <code>1</code> 才干净。</li>
+</ul>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ul>
+<li>官方战役场景打包在 <code>.aoe2campaign</code> 里，改一关要走「拆包 → 改场景 → 重新打包 → 覆盖游戏目录」。</li>
+<li>让某一关带 256x，只需要把场景 Map 段的 <code>script_name</code> 写成 <code>x256tech</code>，一条赋值就够。</li>
+<li>这条路粒度是单个场景：不影响其他关卡，也不改动共享脚本；但脚本文件本身仍要放在 <code>xs</code> 目录。</li>
+<li>解析器写出的场景文件会比原件小几千字节，属正常重写，不是内容丢失。</li>
+<li>备份留好，游戏更新会还原 <code>resources</code> 下的文件。</li>
+</ul>
+</div><div class="recommend-area"><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># Related Post</span><br><span>  1.<a class="is-size-6" href="/2026/10/20/2026-10-20-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E4%BF%AE%E6%94%B9x256%E7%8E%A9%E5%AE%B6%E7%94%9F%E6%95%88/" target="_blank">帝国时代2决定版修改x256玩家生效</a><br></span><span>  2.<a class="is-size-6" href="/2024/06/02/2024-06-02-Java%E4%BD%BF%E7%94%A8JNI%E8%AF%BB%E5%8F%96%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5/" target="_blank">Java使用JNI读取键盘输入</a><br></span><span>  3.<a class="is-size-6" href="/2024/05/13/2024-05-13-pip%E4%BD%BF%E7%94%A8%E5%A4%9A%E4%B8%AA%E6%BA%90%E5%AE%89%E8%A3%85%E7%BB%84%E4%BB%B6/" target="_blank">pip使用多个源安装组件</a><br></span><span>  4.<a class="is-size-6" href="/2024/04/22/2024-04-22-Windows%E4%B8%8B%E4%BD%BF%E7%94%A8Let&#039;s-Encrypt%E8%BF%9B%E8%A1%8Chttps%E7%AD%BE%E5%90%8D/" target="_blank">Windows下使用Let&#039;s Encrypt进行https签名</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2026/10/20/2026-10-20-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E4%BF%AE%E6%94%B9x256%E7%8E%A9%E5%AE%B6%E7%94%9F%E6%95%88/"><span class="level-item">帝国时代2决定版修改x256玩家生效</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><!--!--><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="youkucola"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">youkucola</p><p class="is-size-6 is-block">一名 Java 开发者 &amp; Bukkit开发者</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>上海</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">投稿</p><a href="/archives/"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">カテゴリ</p><a href="/categories/"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">タグ</p><a href="/tags/"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/youkucola" target="_blank" rel="noopener">フォローする</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/youkucola"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:youkucola@outlook.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"From《"+data.from+"》</p><p>Provider-"+data.creator+"</p>");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><!--!--><div class="card widget"><div class="card-content"><h3 class="menu-label">最近の記事</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-10-20T06:40:00.000Z">2026-10-20</time></p><p class="title"><a href="/2026/10/20/2026-10-20-%E7%94%A8AoE2ScenarioParser%E7%BB%99%E5%AE%98%E6%96%B9%E6%88%98%E5%BD%B9%E5%BC%80%E5%90%AF256x%E7%A7%91%E6%8A%80/">用AoE2ScenarioParser给官方战役开启256x科技</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-10-20T05:35:00.000Z">2026-10-20</time></p><p class="title"><a href="/2026/10/20/2026-10-20-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E4%BF%AE%E6%94%B9x256%E7%8E%A9%E5%AE%B6%E7%94%9F%E6%95%88/">帝国时代2决定版修改x256玩家生效</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-06-07T16:00:00.000Z">2026-06-08</time></p><p class="title"><a href="/2026/06/08/cloudflare-temp-mail-deploy-guide/">从阿里云迁移域名到 Cloudflare 并部署临时邮箱</a></p><p class="categories"><a href="/categories/%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/">部署笔记</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-28T07:30:28.000Z">2024-08-28</time></p><p class="title"><a href="/2024/08/28/2024-08-28-Java%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%90%86HTTPS%E6%9C%8D%E5%8A%A1%E5%99%A8/">Java实现代理HTTPS服务器</a></p><p class="categories"><a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-07-01T08:56:45.000Z">2024-07-01</time></p><p class="title"><a href="/2024/07/01/2024-07-01-%E7%BE%A4%E6%99%96%E8%A7%A3%E9%99%A4%E9%BB%98%E8%AE%A4%E7%9A%84-80-443-%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/">群晖解除默认的 80/443 端口占用</a></p><p class="categories"><a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">カテゴリ</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">技术分享</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"><span class="level-start"><span class="level-item">未分类</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">部署笔记</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">アーカイブ</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2026/10/"><span class="level-start"><span class="level-item">October 2026</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2026/06/"><span class="level-start"><span class="level-item">June 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2024/08/"><span class="level-start"><span class="level-item">August 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2024/07/"><span class="level-start"><span class="level-item">July 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2024/06/"><span class="level-start"><span class="level-item">June 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><a class="level is-mobile is-marginless" href="/archives/"><span class="level-start"><span class="level-item">查看全部&gt;&gt;</span></span></a></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">タグ</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32/"><span class="tag">帝国时代2</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B8%B8%E6%88%8F%E4%BF%AE%E6%94%B9/"><span class="tag">游戏修改</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Cloudflare/"><span class="tag">Cloudflare</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/D1/"><span class="tag">D1</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/DSM/"><span class="tag">DSM</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Java/"><span class="tag">Java</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Pages/"><span class="tag">Pages</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Workers/"><span class="tag">Workers</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/pip/"><span class="tag">pip</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%9F%9F%E5%90%8D/"><span class="tag">域名</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">更新を購読する</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="購読する"></div></div></form></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="size-small"><span>&copy; 2026 youkucola</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a> &amp; <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">Amazing</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️Site from <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> has existed <strong>" + dnum + "</strong> d <strong>" + hnum + "</strong> h <strong>" + mnum + "</strong> m <strong>" + snum + "</strong> s！❤️";
+        }var now = new Date();setInterval("createTime('2026/4/12 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️Thx <strong><span id="busuanzi_value_site_uv">99+</span></strong> users <strong><span id="busuanzi_value_site_pv">99+</span></strong> visited！❤️</span></div></p></div><div class="level-end"></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script><script>moment.locale("zh");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="トップに戻る" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="何かを入力してください..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"何かを入力してください...","untitled":"(無題)","posts":"投稿","pages":"ページ","categories":"カテゴリ","tags":"タグ"});
+        });</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script><script type="text/javascript">var pjax = new Pjax({
+            elements: "a",//代表点击链接就更新
+            selectors: [  //代表要更新的节点
+                ".section",
+                "title"
+            ],
+            cache: true,
+            cacheBust:false
+        })
+
+        function loadBusuanzi(){
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js", function () {});
+        }
+
+        function loadMathJax() { //加载mathjax
+            $.getScript("//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML", function () {
+                MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\(', '\)']] } });
+                var math = document.getElementsByClassName("entry-content")[0];
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
+            });
+        };
+
+        // 开始 PJAX 执行的函数
+        document.addEventListener('pjax:send', function () {
+        });
+        
+        // PJAX 完成之后执行的函数，可以和上面的重载放在一起
+        document.addEventListener('pjax:complete', function () {
+            $(".section").css({opacity:1});
+            if(false){
+                $.getScript('/js/comment-issue-data.js',function(){loadIssueData('undefined','undefined','undefined','undefined',undefined);});
+            }
+            if(false){
+                loadMathJax();
+            }
+            loadMainJs(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings);
+            loadBackTop();
+            loadBusuanzi();
+            if(typeof loadBanner == 'function'){
+                loadBanner();
+            }
+        });</script></body></html>
