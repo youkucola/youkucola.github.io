@@ -1,0 +1,2806 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: XS - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="youkucola"><meta property="og:url" content="https://yokuucola.github.io/"><meta property="og:site_name" content="youkucola"><meta property="og:locale" content="zh"><meta property="og:image" content="https://yokuucola.github.io/img/og_image.png"><meta property="article:author" content="youkucola"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yokuucola.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.youkucola.icu"},"headline":"Hexo","image":["https://blog.youkucola.icu/img/og_image.png"],"author":{"@type":"Person","name":"youkucola"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"description":""}</script><meta name="referrer" content="no-referrer-when-downgrade"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/6.0.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdnjs.loli.net/ajax/libs/pace/1.2.4/pace.min.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/friend">友链</a></div><div class="navbar-end"><a class="navbar-item search" title="Suche" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags/">Tags</a></li><li class="is-active"><a href="#" aria-current="page">XS</a></li></ul></nav></div></div><!--!--><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2026-11-03  <a class="commentCountImg" href="/2026/11/03/2026-11-03-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E7%A7%91%E6%8A%80ID%E5%AE%8C%E6%95%B4%E5%AF%B9%E7%85%A7%E8%A1%A8/#comment-container"><span class="display-none-class">/2026/11/03/2026-11-03-帝国时代2决定版科技ID完整对照表/</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="67b25df56701bf76a4a8d49435c5dc62">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>2 h  <i class="fas fa-pencil-alt"> </i>16.1 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2026/11/03/2026-11-03-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E7%A7%91%E6%8A%80ID%E5%AE%8C%E6%95%B4%E5%AF%B9%E7%85%A7%E8%A1%A8/">帝国时代2 决定版 科技 ID 完整对照表（399 条）</a></h1><div class="content"><h2 id="数据来源与口径"><a href="#数据来源与口径" class="headerlink" title="数据来源与口径"></a>数据来源与口径</h2><blockquote>
+<p>数据来源：游戏根目录 <code>&lt;AoE2DE&gt;</code>，Steam appid 813780，buildid 26272505。本文件由 <code>export_aoe2de_techs.py</code> 只读扫描游戏安装目录导出，不写入任何游戏文件。<br>六项数据来源：<code>resources\_common\dat\CivTechTrees\*.json</code>（62 个文明科技树，科技集合与 techID 主来源）、<code>resources\_common\dat\linkedTechs.json</code>（17 条互斥&#x2F;循环&#x2F;可切换科技组）、<code>resources\_common\dat\civilizations.json</code>（文明 <code>era</code> 字段）、<code>resources\_common\dat\unitlines.json</code>（单位线 <code>IDChain</code>，用于排除「单位名被误当成科技名」）、官方 AI 常量表 <code>resources\_common\ai\Promisory\const.per</code> + <code>customConstants.per</code>（<code>defconst ri-&lt;name&gt; &lt;N&gt;</code>，techID 的独立佐证）、<code>resources\_common\dat\empires2_x2_p1.dat</code>（用于给退役科技定位 techID）。<br>中文名与描述取自 <code>resources\zh\strings\key-value\*.txt</code>，英文标识取自 <code>resources\en\strings\key-value\*.txt</code>。<br>来源对账：CivTechTrees 科技节点 372（Node ID 系 238 + Trigger Tech ID 系 134）+ linkedTechs.json <code>Techs[]</code> 17 + 字符串表反向补齐 10 &#x3D; <strong>372 + 17 + 10 &#x3D; 399</strong>。其中 389 条可研究，10 条已退役。</p>
+</blockquote>
+<h2 id="这个文件是什么"><a href="#这个文件是什么" class="headerlink" title="这个文件是什么"></a>这个文件是什么</h2><p><code>aoe2de_techs.xs</code> 是一份 AoE2DE 的 XS 脚本（<code>.xs</code>）。脚本在决定版的场景与 AI 脚本里被当作嵌入式语言使用，用于读取科技、单位、玩家状态等游戏数据。</p>
+<p>整份文件只有一件事：399 条 <code>extern const int</code> 定义，构成「科技常量名 → techID」的一一映射，不含任何逻辑、函数或条件分支。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">extern const int TECH_ELITE_TARKAN = 2; //精锐答刺罕骑兵: 升级到精锐答刺罕骑兵：将您的答刺罕骑兵升级，生产更为强大的精锐答刺罕骑兵。</span><br><span class="line">extern const int TECH_YEOMEN = 3; //英皇侍卫: 研究英皇侍卫 (步弓手和掷矛手系射程 +1；瞭望箭塔系攻击力 +2)</span><br><span class="line">extern const int TECH_HOLCANS = 4; //霍尔坎: 研究霍尔坎 (鹰勇士生命值 +40)</span><br><span class="line">extern const int TECH_FUROR_CELTICA = 5; //凯尔特狂暴: 研究凯尔特狂暴 (攻城武器生命值 +40%)</span><br><span class="line">extern const int TECH_DRILL = 6; //操练: 研究操练 (攻城武器厂单位移动速度 +50%)</span><br></pre></td></tr></table></figure>
+
+<p><code>extern</code> 表示这些常量是外部可引用的：任何 <code>#include</code> 或加载了本文件的 XS 脚本，都能直接用常量名取到对应的 techID，不必在代码里硬编码数字。<code>const int</code> 则表明它们在脚本生命周期内是只读的。</p>
+<p>常量名遵循 <code>TECH_</code> + 英文科技名的命名规则，非法字符会被替换。最典型的是撇号：<code>Northmen&#39;s Fury</code> 的常量名是 <code>TECH_NORTHMEN_S_FURY</code>，而不是 <code>TECH_NORTHMEN&#39;S_FURY</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extern const int TECH_NORTHMEN_S_FURY = 1483; //北方人之怒: 研究北方人之怒：投石车系和大型投石战舰的射程 +1；攻城武器和攻城战船对建筑的攻击 +40%。</span><br></pre></td></tr></table></figure>
+
+<h2 id="字段与数据边界"><a href="#字段与数据边界" class="headerlink" title="字段与数据边界"></a>字段与数据边界</h2><p>先把边界说清楚：这份文件的信息量比标题暗示的要窄。每条记录只有四个字段。</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>是否在文件中</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>常量名</td>
+<td>有</td>
+<td><code>TECH_*</code>，XS 脚本里直接引用的标识</td>
+</tr>
+<tr>
+<td>techID</td>
+<td>有</td>
+<td>取自 DAT 真实科技 ID（节点 ID 字段），不是「字符串 ID − 7000」</td>
+</tr>
+<tr>
+<td>科技中文名称</td>
+<td>有</td>
+<td>来自中文文本表主表</td>
+</tr>
+<tr>
+<td>效果描述</td>
+<td>部分有</td>
+<td>少数单位升级科技的中文文本表无「升级到 X」条目，描述为空</td>
+</tr>
+<tr>
+<td>成本（食物&#x2F;木材&#x2F;黄金&#x2F;石头）</td>
+<td><strong>无</strong></td>
+<td>本文件不含，需另取 <code>CivTechTrees/*.json</code> 或解析 DAT</td>
+</tr>
+<tr>
+<td>研究时间</td>
+<td><strong>无</strong></td>
+<td>本文件不含，需另取 <code>CivTechTrees/*.json</code></td>
+</tr>
+<tr>
+<td>前置科技</td>
+<td><strong>无</strong></td>
+<td>本文件不含，需另取 <code>CivTechTrees/*.json</code></td>
+</tr>
+<tr>
+<td>所属时代（黑暗&#x2F;封建&#x2F;城堡&#x2F;帝王）</td>
+<td><strong>无</strong></td>
+<td>本文件不含，需另取 <code>CivTechTrees/*.json</code></td>
+</tr>
+<tr>
+<td>文明归属</td>
+<td><strong>无</strong></td>
+<td>本文件不含，需另取 <code>CivTechTrees/*.json</code></td>
+</tr>
+<tr>
+<td>科技树位置（哪个建筑里点）</td>
+<td><strong>无</strong></td>
+<td>本文件不含，需另取 <code>CivTechTrees/*.json</code></td>
+</tr>
+</tbody></table>
+<p>覆盖口径分两类，互不重叠：</p>
+<ul>
+<li><strong>可研究 389 条</strong>（&#x3D; 372 + 17）：techID 至少被一个文明科技树节点或 <code>linkedTechs</code> 组引用，即当前版本至少有一个文明能研究它。</li>
+<li><strong>已退役 10 条</strong>（&#x3D; 10）：62 个文明科技树与 <code>linkedTechs</code> 均无任何引用，当前版本任何文明都无法研究，仅为兼容保留。</li>
+</ul>
+<p>techID 范围 <strong>2 – 1496</strong>，全局唯一无重复，且在文件中按 ID 升序排列。</p>
+<h2 id="使用陷阱：退役常量会静默失败"><a href="#使用陷阱：退役常量会静默失败" class="headerlink" title="使用陷阱：退役常量会静默失败"></a>使用陷阱：退役常量会静默失败</h2><p>源文件头部注释里最需要记住的一条：<strong>在 XS 里引用已退役的科技常量，既不报错，也不产生任何效果。</strong></p>
+<p>不抛异常、不返回错误码、不中断脚本。调用效果等同「未研究」——这是彻底的静默失败。因此绝不能用「常量在文件里存在」去推断「这个科技当前可用」。需要判断可用性，必须自己查文明科技树。</p>
+<p>10 条退役科技全部集中在这一段：</p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ZEALOTRY</code></td>
+<td align="right">9</td>
+<td>狂热行为</td>
+</tr>
+<tr>
+<td><code>TECH_CARTOGRAPHY</code></td>
+<td align="right">19</td>
+<td>绘图法</td>
+</tr>
+<tr>
+<td><code>TECH_BEARDED_AXE</code></td>
+<td align="right">83</td>
+<td>芒刺斧</td>
+</tr>
+<tr>
+<td><code>TECH_HAND_CANNON</code></td>
+<td align="right">85</td>
+<td>火枪</td>
+</tr>
+<tr>
+<td><code>TECH_TRACKING</code></td>
+<td align="right">90</td>
+<td>跟踪术</td>
+</tr>
+<tr>
+<td><code>TECH_MADRASAH</code></td>
+<td align="right">490</td>
+<td>清真学堂</td>
+</tr>
+<tr>
+<td><code>TECH_PAVISE</code></td>
+<td align="right">494</td>
+<td>大盾</td>
+</tr>
+<tr>
+<td><code>TECH_ORTHODOXY</code></td>
+<td align="right">512</td>
+<td>东正教</td>
+</tr>
+<tr>
+<td><code>TECH_REVETMENTS</code></td>
+<td align="right">525</td>
+<td>堑壕</td>
+</tr>
+<tr>
+<td><code>TECH_SUPPLIES</code></td>
+<td align="right">716</td>
+<td>供给</td>
+</tr>
+</tbody></table>
+<p>这 10 条的 techID 全部小于 750，无一例外落在老科技段。这也符合直觉：退役是一批一批发生的，老科技的淘汰在前，新 DLC 科技不会有退役问题。</p>
+<p>其中 <code>SUPPLIES</code>（供给，716）的退役判定是做了一次抽查论证的，不是单纯依赖「科技树没列出来」。同类兵营科技在 62 个文明科技树中的出现次数：Arson 62&#x2F;62、Squires 59&#x2F;62、Gambesons 56&#x2F;62、Pikeman 59&#x2F;62、Halberdier 59&#x2F;62，而 Supplies 为 <strong>0&#x2F;62</strong>。兵营科技整体没有漏收，Supplies 是真实的退役条目。</p>
+<p>不过这个抽查只排除了「兵营科技整体漏收」这一种可能，不能证明 <code>CivTechTrees</code> 在弓兵、骑兵、攻城等其他类别上同样完整。</p>
+<h2 id="文本层面的两个规律"><a href="#文本层面的两个规律" class="headerlink" title="文本层面的两个规律"></a>文本层面的两个规律</h2><p>以下两条是从数据分布里<strong>观察</strong>出来的，<strong>不是文件里的字段</strong>，也没有官方文档背书，属于推断性质。</p>
+<p><strong>一、techID 段位存在分层</strong></p>
+<table>
+<thead>
+<tr>
+<th>techID 段</th>
+<th align="right">条数</th>
+<th>观察</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2 – 499</td>
+<td align="right">167</td>
+<td>老科技密集区，含 7 条退役条目（退役条目全部 10 条均 &lt; 750）</td>
+</tr>
+<tr>
+<td>500 – 999</td>
+<td align="right">107</td>
+<td>混合区，HD&#x2F;非洲王国到决定版早期</td>
+</tr>
+<tr>
+<td>1000 – 1199</td>
+<td align="right">54</td>
+<td>DLC 科技开始增多</td>
+</tr>
+<tr>
+<td>1200 – 1299</td>
+<td align="right">32</td>
+<td>单一 DLC 集群</td>
+</tr>
+<tr>
+<td>1300 – 1399</td>
+<td align="right">23</td>
+<td>单一 DLC 集群</td>
+</tr>
+<tr>
+<td>1400 – 1496</td>
+<td align="right">16</td>
+<td>新 DLC 科技集中区，1452 – 1496 一段几乎全是北欧&#x2F;瓦兰吉系</td>
+</tr>
+</tbody></table>
+<p>把 1400 – 1496 这 16 条单独拉出来看，信号非常明确：<code>TECH_E_VARANGIAN_GUARD</code>（精锐瓦兰吉卫队）、<code>TECH_ELITE_JARL</code>（精锐首领）、<code>TECH_ELITE_JOMSVIKING</code>（精锐约姆斯维京）、<code>TECH_VENDEL_LEGACY</code>（文德尔传承）、<code>TECH_GOTHIKON</code>（哥瑟砍）、<code>TECH_NORTHMEN_S_FURY</code>（北方人之怒）、<code>TECH_HAMASK</code>（哈马思克）——密集的北欧语汇。这支持「新增内容倾向于分配更大的 techID」这一推断，但仅仅是推断。</p>
+<p><strong>二、效果描述存在三代风格</strong></p>
+<table>
+<thead>
+<tr>
+<th>风格</th>
+<th>特征</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>早期</td>
+<td><code>研究X (效果)</code>，用半角圆括号包裹效果</td>
+<td><code>TECH_YEOMEN</code> 英皇侍卫：<code>研究英皇侍卫 (步弓手和掷矛手系射程 +1；瞭望箭塔系攻击力 +2)</code></td>
+</tr>
+<tr>
+<td>早期</td>
+<td>同上，含百分比</td>
+<td><code>TECH_FUROR_CELTICA</code> 凯尔特狂暴：<code>研究凯尔特狂暴 (攻城武器生命值 +40%)</code></td>
+</tr>
+<tr>
+<td>中后期至新科技</td>
+<td><code>研究X：效果</code>，用中文全角冒号</td>
+<td><code>TECH_NORTHMEN_S_FURY</code> 北方人之怒：<code>研究北方人之怒：投石车系和大型投石战舰的射程 +1；攻城武器和攻城战船对建筑的攻击 +40%。</code></td>
+</tr>
+<tr>
+<td>中后期至新科技</td>
+<td>同上，短句</td>
+<td><code>TECH_SHIELD_WALL</code> 盾墙：<code>研究盾墙：步兵成群时获得额外的护甲。</code></td>
+</tr>
+<tr>
+<td>精锐升级类</td>
+<td><code>升级到X：…</code> 或 <code>升级为X：…</code></td>
+<td><code>TECH_ELITE_TARKAN</code> 精锐答刺罕骑兵：<code>升级到精锐答刺罕骑兵：将您的答刺罕骑兵升级，生产更为强大的精锐答刺罕骑兵。</code></td>
+</tr>
+<tr>
+<td>精锐升级类</td>
+<td>同上，另一种动词</td>
+<td><code>TECH_E_VARANGIAN_GUARD</code> 精锐瓦兰吉卫队：<code>升级为精锐瓦兰吉卫队：升级你的瓦兰吉卫队，让你可以生产更强大的精锐瓦兰吉卫队。</code></td>
+</tr>
+</tbody></table>
+<p>精锐升级类还有动词分化：老条目多用「升级到」，新条目多用「升级为」，且第二人称从「您的」变成「你的」。这些差异在解析文本时需要留意，不要用单一正则去匹配全表。</p>
+<h2 id="已知局限"><a href="#已知局限" class="headerlink" title="已知局限"></a>已知局限</h2><p>以下事项来自源文件头部注释，都是明确列出的，不是推测。</p>
+<p><strong>主动剔除：Elite Qizilbash Warrior 未收录。</strong> 它的 techID 只有「DAT 内部名启发式对齐」这一条证据支撑：AI 常量表里没有 qizilbash &#x2F; 967，62 个文明科技树对 <code>Qizilbash</code> 命中 0，<code>unitlines.json</code> 的 <code>IDChain [1817, 1829]</code> 给的是单位 ID 而非科技 ID，文本索引 N&#x3D;449 与 967 之间也没有可推导的关系。无法验证的 ID 会导致脚本静默研究错科技，因此整条不收录（见脚本的 <code>REVERSE_DENY</code>）。这是「宁缺勿错」的取舍。</p>
+<p><strong>同名冲突保留传统文明名称。</strong> 同一个 techID 被传统文明（<code>era=base</code>）与 Chronicles 新文明（<code>era=antiquity</code>）复用时，保留传统文明的名称，因为其编号经锚点验证为真实 DAT techID。冲突明细在导出脚本的 stdout 里。</p>
+<p><strong>DAT 对齐是启发式的，不是完整解析。</strong> <code>empires2_x2_p1.dat</code> 是压缩容器（raw deflate，解压后约 89.0 MiB），脚本按 <code>0x600A</code> 记录标记 + 名称匹配率来定位科技表，科技表名称匹配率 57%。因此 DAT 只用于给退役科技定位 techID，不作为全量枚举来源；匹配率越低，退役条目的 techID 越需要人工复核。</p>
+<p><strong>退役 techID 若被新内容复用，常量名会与真实语义不符。</strong> 本文件按名称文本保留，无法从文本侧发现这种 ID 复用。</p>
+<p><strong>部分单位升级科技的描述缺失。</strong> 少数单位升级科技在中文文本表里没有「升级到 X」条目，注释只有名称、没有描述。本文表格中这类条目的效果描述列填 <code>—</code>。本文件里只有一条：<code>TECH_CHAMPI_SCOUT</code>（蔷琵斥候，1350）。</p>
+<h2 id="科技-ID-完整对照表（399-条）"><a href="#科技-ID-完整对照表（399-条）" class="headerlink" title="科技 ID 完整对照表（399 条）"></a>科技 ID 完整对照表（399 条）</h2><p>下表 399 行全部由脚本从源文件第 58 行起机械解析生成，未手工改写、未重排。科技名称与效果描述的分隔沿用源文件注释里的第一个冒号。需要成本、研究时间、前置科技、所属时代或文明归属，请另取 <code>CivTechTrees/*.json</code>。</p>
+<p><strong>ID 2 – 499（167 条）</strong></p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+<th>效果描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ELITE_TARKAN</code></td>
+<td align="right">2</td>
+<td>精锐答刺罕骑兵</td>
+<td>升级到精锐答刺罕骑兵：将您的答刺罕骑兵升级，生产更为强大的精锐答刺罕骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_YEOMEN</code></td>
+<td align="right">3</td>
+<td>英皇侍卫</td>
+<td>研究英皇侍卫 (步弓手和掷矛手系射程 +1；瞭望箭塔系攻击力 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_HOLCANS</code></td>
+<td align="right">4</td>
+<td>霍尔坎</td>
+<td>研究霍尔坎 (鹰勇士生命值 +40)</td>
+</tr>
+<tr>
+<td><code>TECH_FUROR_CELTICA</code></td>
+<td align="right">5</td>
+<td>凯尔特狂暴</td>
+<td>研究凯尔特狂暴 (攻城武器生命值 +40%)</td>
+</tr>
+<tr>
+<td><code>TECH_DRILL</code></td>
+<td align="right">6</td>
+<td>操练</td>
+<td>研究操练 (攻城武器厂单位移动速度 +50%)</td>
+</tr>
+<tr>
+<td><code>TECH_CITADELS</code></td>
+<td align="right">7</td>
+<td>堡垒</td>
+<td>研究堡垒 (城堡攻击力 +4，对冲车的攻击力 +3，对步兵的攻击力 +3，受到的加成伤害 -25%)</td>
+</tr>
+<tr>
+<td><code>TECH_TOWN_WATCH</code></td>
+<td align="right">8</td>
+<td>城镇瞭望</td>
+<td>研究城镇瞭望 (建筑的视野 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_ZEALOTRY</code></td>
+<td align="right">9</td>
+<td>狂热行为</td>
+<td>研究狂热行为 (骆驼单位生命值 +20) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_ARTILLERY</code></td>
+<td align="right">10</td>
+<td>火炮术</td>
+<td>研究火炮术 (炮塔、手推炮、炮舰射程 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_CRENELLATIONS</code></td>
+<td align="right">11</td>
+<td>开垛口</td>
+<td>研究开垛口 (城堡射程 +3，驻扎的步兵可射箭)</td>
+</tr>
+<tr>
+<td><code>TECH_CROP_ROTATION</code></td>
+<td align="right">12</td>
+<td>轮作</td>
+<td>研究轮作 (新农田提供的食物 +175。现有农田提供的食物数量较少。)</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_PLOW</code></td>
+<td align="right">13</td>
+<td>重犁</td>
+<td>研究重犁 (新农田提供的食物 +125。农民的运载量 +1。现有农田提供的食物数量较少。)</td>
+</tr>
+<tr>
+<td><code>TECH_HORSE_COLLAR</code></td>
+<td align="right">14</td>
+<td>马轭</td>
+<td>研究马轭 (新农田提供的食物 +75。现有农田提供的食物数量较少。)</td>
+</tr>
+<tr>
+<td><code>TECH_GUILDS</code></td>
+<td align="right">15</td>
+<td>行会</td>
+<td>研究行会 (市场交易费用降至 15%)</td>
+</tr>
+<tr>
+<td><code>TECH_ANARCHY</code></td>
+<td align="right">16</td>
+<td>无政府</td>
+<td>研究无政府 (可在兵营训练侍从战士)</td>
+</tr>
+<tr>
+<td><code>TECH_BANKING</code></td>
+<td align="right">17</td>
+<td>银行业</td>
+<td>研究银行业 (免费向其他玩家进贡)</td>
+</tr>
+<tr>
+<td><code>TECH_CARTOGRAPHY</code></td>
+<td align="right">19</td>
+<td>绘图法</td>
+<td>研究绘图法 (共享地图) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_ATHEISM</code></td>
+<td align="right">21</td>
+<td>无神论</td>
+<td>研究无神论 (敌方圣物产生的资源 -50%；世界奇观和圣物胜利的倒计时延长 100 年)</td>
+</tr>
+<tr>
+<td><code>TECH_LOOM</code></td>
+<td align="right">22</td>
+<td>织布机</td>
+<td>研究织布机 (村民的生命值 +15，近战护甲 +1&#x2F;远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_COINAGE</code></td>
+<td align="right">23</td>
+<td>铸币术</td>
+<td>研究铸币术 (向其他玩家进贡花费仅需 20%)</td>
+</tr>
+<tr>
+<td><code>TECH_GARLAND_WARS</code></td>
+<td align="right">24</td>
+<td>荣冠战争</td>
+<td>研究荣冠战争 (步兵攻击力 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_PLUMED_ARCHER</code></td>
+<td align="right">27</td>
+<td>精锐羽箭手</td>
+<td>升级到精锐羽箭手：将您的羽箭手升级，生产更为强大的精锐羽箭手。</td>
+</tr>
+<tr>
+<td><code>TECH_BIMARISTAN</code></td>
+<td align="right">28</td>
+<td>穆斯林诊所</td>
+<td>研究穆斯林诊所 (僧侣自动治疗附近多个单位)</td>
+</tr>
+<tr>
+<td><code>TECH_MEDIUM_WARSHIPS</code></td>
+<td align="right">34</td>
+<td>中型战船</td>
+<td>升级到战船、喷火船和战争巨舰</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_WARSHIPS</code></td>
+<td align="right">35</td>
+<td>重型战船</td>
+<td>升级到大型战舰、快速喷火船和大帆船：升级战船、喷火船和战争巨舰。让你能建造大型战舰、快速喷火船和大帆船，它们更强大，护甲更好。</td>
+</tr>
+<tr>
+<td><code>TECH_HUSBANDRY</code></td>
+<td align="right">39</td>
+<td>畜牧</td>
+<td>研究畜牧 (骑兵单位的移动速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_FAITH</code></td>
+<td align="right">45</td>
+<td>信念</td>
+<td>研究信念：单位被敌人僧侣招降的困难度增加 50%。</td>
+</tr>
+<tr>
+<td><code>TECH_DEVOTION</code></td>
+<td align="right">46</td>
+<td>虔诚</td>
+<td>研究虔诚 (单位被敌方僧侣招降的困难度增加 15%)</td>
+</tr>
+<tr>
+<td><code>TECH_CHEMISTRY</code></td>
+<td align="right">47</td>
+<td>化学</td>
+<td>研究化学 (步弓手、掷矛手、骑射手、远程战船和远程防御工事等的攻击力 +1。用于火药单位)</td>
+</tr>
+<tr>
+<td><code>TECH_CARAVAN</code></td>
+<td align="right">48</td>
+<td>篷车</td>
+<td>研究篷车 (贸易单位移动速度 +20%)</td>
+</tr>
+<tr>
+<td><code>TECH_BOGSVEIGAR</code></td>
+<td align="right">49</td>
+<td>博格斯维加尔</td>
+<td>研究博格斯维加尔 (弓兵系和维京长船攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_MASONRY</code></td>
+<td align="right">50</td>
+<td>石工术</td>
+<td>研究石工术 (建筑的生命值 +10%，近战护甲 +1&#x2F;远程护甲 +1 以及建筑护甲 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_ARCHITECTURE</code></td>
+<td align="right">51</td>
+<td>建筑学</td>
+<td>研究建筑学 (建筑的生命值 +10%，近战护甲 +1&#x2F;远程护甲 +1 以及建筑护甲 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_ROCKETRY</code></td>
+<td align="right">52</td>
+<td>火箭术</td>
+<td>研究火箭术(弩炮、火箭推车和楼船攻击力 +25%；楼船可发射火箭)</td>
+</tr>
+<tr>
+<td><code>TECH_TREADMILL_CRANE</code></td>
+<td align="right">54</td>
+<td>脚踏起重机</td>
+<td>研究脚踏起重机 (村民建造建筑的速度 +20%)</td>
+</tr>
+<tr>
+<td><code>TECH_GOLD_MINING</code></td>
+<td align="right">55</td>
+<td>金矿开采</td>
+<td>研究金矿开采 (村民采集黄金的速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_KATAPARUTO</code></td>
+<td align="right">59</td>
+<td>弹射器</td>
+<td>研究弹射器 (巨型投石机的攻击和组装&#x2F;拆装速度提升)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CONQUISTADOR</code></td>
+<td align="right">60</td>
+<td>精锐西班牙征服者</td>
+<td>升级到精锐西班牙征服者：将您的西班牙征服者升级，生产更为强大的精锐西班牙征服者。</td>
+</tr>
+<tr>
+<td><code>TECH_LOGISTICA</code></td>
+<td align="right">61</td>
+<td>后勤学</td>
+<td>研究后勤学 (甲胄骑兵和瓦兰吉卫队可造成践踏伤害)</td>
+</tr>
+<tr>
+<td><code>TECH_KEEP</code></td>
+<td align="right">63</td>
+<td>大型箭塔</td>
+<td>升级到大型箭塔：将防卫塔升级为更强大的大型箭塔。</td>
+</tr>
+<tr>
+<td><code>TECH_BOMBARD_TOWER</code></td>
+<td align="right">64</td>
+<td>炮塔</td>
+<td>研究炮塔 (解锁炮塔)</td>
+</tr>
+<tr>
+<td><code>TECH_GILLNETS</code></td>
+<td align="right">65</td>
+<td>刺网</td>
+<td>研究刺网 (捕鱼船采集速度 +10%，运载量 +5)</td>
+</tr>
+<tr>
+<td><code>TECH_FORGING</code></td>
+<td align="right">67</td>
+<td>锻造</td>
+<td>研究锻造 (步兵、骑兵和趸船系的攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_IRON_CASTING</code></td>
+<td align="right">68</td>
+<td>铸铁</td>
+<td>研究铸铁 (步兵、骑兵和趸船系的攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_SCALE_MAIL_ARMOR</code></td>
+<td align="right">74</td>
+<td>步兵鳞甲</td>
+<td>研究步兵鳞甲 (步兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_BLAST_FURNACE</code></td>
+<td align="right">75</td>
+<td>鼓风炉</td>
+<td>研究鼓风炉 (步兵、骑兵和趸船系的攻击力 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_CHAIN_MAIL_ARMOR</code></td>
+<td align="right">76</td>
+<td>步兵锁甲</td>
+<td>研究步兵锁甲 (步兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_PLATE_MAIL_ARMOR</code></td>
+<td align="right">77</td>
+<td>步兵钢甲</td>
+<td>研究步兵钢甲 (步兵的近战护甲 +1&#x2F;远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_PLATE_BARDING_ARMOR</code></td>
+<td align="right">80</td>
+<td>骑兵钢甲</td>
+<td>研究骑兵钢甲 (骑兵的近战护甲 +1&#x2F;远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_SCALE_BARDING_ARMOR</code></td>
+<td align="right">81</td>
+<td>骑兵鳞甲</td>
+<td>研究骑兵鳞甲 (骑兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_CHAIN_BARDING_ARMOR</code></td>
+<td align="right">82</td>
+<td>骑兵锁甲</td>
+<td>研究骑兵锁甲 (骑兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_BEARDED_AXE</code></td>
+<td align="right">83</td>
+<td>芒刺斧</td>
+<td>研究芒刺斧 (掷斧兵的射程 +2) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_HAND_CANNON</code></td>
+<td align="right">85</td>
+<td>火枪</td>
+<td>研究火枪手 (需要化学) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_TRACKING</code></td>
+<td align="right">90</td>
+<td>跟踪术</td>
+<td>研究跟踪 (步兵视野 +2) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_BALLISTICS</code></td>
+<td align="right">93</td>
+<td>弹道学</td>
+<td>研究弹道学 (步弓手、掷矛手、骑射手、远程战船、远程防御工事和部分攻城武器对移动目标的射击准确度更高)。</td>
+</tr>
+<tr>
+<td><code>TECH_CAPPED_RAM</code></td>
+<td align="right">96</td>
+<td>中型冲车</td>
+<td>升级到中型冲车：升级攻城锤为中型冲车，它更强大，护甲更好。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_SKIRMISHER</code></td>
+<td align="right">98</td>
+<td>精锐掷矛手</td>
+<td>升级到精锐掷矛手：将你的掷矛手升级，生产更为强大的精锐掷矛手。</td>
+</tr>
+<tr>
+<td><code>TECH_CROSSBOWMAN</code></td>
+<td align="right">100</td>
+<td>弩手</td>
+<td>升级到弩手：将您的步弓手升级，生产更为强大、护甲更好，射程更远的弩手。</td>
+</tr>
+<tr>
+<td><code>TECH_FEUDAL_AGE</code></td>
+<td align="right">101</td>
+<td>封建时代</td>
+<td>升级到封建时代 (两座黑暗时代建筑)</td>
+</tr>
+<tr>
+<td><code>TECH_CASTLE_AGE</code></td>
+<td align="right">102</td>
+<td>城堡时代</td>
+<td>升级到城堡时代 (两座封建时代建筑)</td>
+</tr>
+<tr>
+<td><code>TECH_IMPERIAL_AGE</code></td>
+<td align="right">103</td>
+<td>帝王时代</td>
+<td>升级到帝王时代 (两座城堡时代建筑)</td>
+</tr>
+<tr>
+<td><code>TECH_GUARD_TOWER</code></td>
+<td align="right">140</td>
+<td>警戒箭塔</td>
+<td>升级到警戒箭塔</td>
+</tr>
+<tr>
+<td><code>TECH_GOLD_SHAFT_MINING</code></td>
+<td align="right">182</td>
+<td>钻井采金法</td>
+<td>研究钻井采金法 (村民采集黄金的速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_FORTIFIED_WALL</code></td>
+<td align="right">194</td>
+<td>垛墙</td>
+<td>升级到垛墙</td>
+</tr>
+<tr>
+<td><code>TECH_PIKEMAN</code></td>
+<td align="right">197</td>
+<td>长枪兵</td>
+<td>升级到长枪兵：将您的长矛兵升级，生产更为强大的长枪兵。</td>
+</tr>
+<tr>
+<td><code>TECH_FLETCHING</code></td>
+<td align="right">199</td>
+<td>箭羽</td>
+<td>研究箭羽 (弓兵单位、掷矛手、远程战船、远程防御工事等攻击力 +1，射程 +1；城镇中心攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_BODKIN_ARROW</code></td>
+<td align="right">200</td>
+<td>锥子箭</td>
+<td>研究锥子箭 (弓兵单位、掷矛手、远程战船、远程防御工事等的攻击力 +1，射程 +1；城镇中心的攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_BRACER</code></td>
+<td align="right">201</td>
+<td>护腕</td>
+<td>研究护腕 (弓兵单位、掷矛手、远程战船、远程防御工事等的攻击力 +1，射程 +1；城镇中心的攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_DOUBLE_BIT_AXE</code></td>
+<td align="right">202</td>
+<td>双刃斧</td>
+<td>研究双刃斧 (村民采集木材的速度 +20%)</td>
+</tr>
+<tr>
+<td><code>TECH_BOW_SAW</code></td>
+<td align="right">203</td>
+<td>弓锯</td>
+<td>研究弓锯 (村民采集木材的速度 +20%)</td>
+</tr>
+<tr>
+<td><code>TECH_LONG_SWORDSMAN</code></td>
+<td align="right">207</td>
+<td>长剑士</td>
+<td>升级到长剑士：将您的剑士升级，升级更为强大的长剑士。</td>
+</tr>
+<tr>
+<td><code>TECH_CAVALIER</code></td>
+<td align="right">209</td>
+<td>重装骑士</td>
+<td>升级到重装骑士：将你的骑士升级，生产更为强大的重装骑士。</td>
+</tr>
+<tr>
+<td><code>TECH_PADDED_ARCHER_ARMOR</code></td>
+<td align="right">211</td>
+<td>射手软甲</td>
+<td>研究射手软甲 (远程士兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_LEATHER_ARCHER_ARMOR</code></td>
+<td align="right">212</td>
+<td>射手皮甲</td>
+<td>研究射手皮甲 (远程士兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_WHEELBARROW</code></td>
+<td align="right">213</td>
+<td>独轮推车</td>
+<td>研究独轮推车 (村民的运载量 +25%，移动速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_SQUIRES</code></td>
+<td align="right">215</td>
+<td>护卫</td>
+<td>研究护卫 (步兵的移动速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_TWO_HANDED_SWORDSMAN</code></td>
+<td align="right">217</td>
+<td>双手剑士</td>
+<td>升级到双手剑士：将您的长剑士升级，生产更为强大的双手剑士。</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_CAVALRY_ARCHER</code></td>
+<td align="right">218</td>
+<td>重装骑射手</td>
+<td>升级到重装骑射手：将您的骑射手升级，生产更为强大的重装骑射手。</td>
+</tr>
+<tr>
+<td><code>TECH_RING_ARCHER_ARMOR</code></td>
+<td align="right">219</td>
+<td>射手锁甲</td>
+<td>研究射手锁甲 (远程士兵的近战护甲 +1&#x2F;远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_TWO_MAN_SAW</code></td>
+<td align="right">221</td>
+<td>双人锯</td>
+<td>研究双人锯 (村民采集木材的速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_MAN_AT_ARMS</code></td>
+<td align="right">222</td>
+<td>武士</td>
+<td>生产武士：多功能步兵。适于攻击建筑、步兵、斥候骑兵和掷矛手系。不适于远程攻击远程士兵。升级：攻击力，护甲 (铁匠铺)；速度，远程护甲，升级为长剑士 (兵营)；生产速度 (城堡)；提升抵抗僧侣的能力 (修道院)。</td>
+</tr>
+<tr>
+<td><code>TECH_BLOCK_PRINTING</code></td>
+<td align="right">230</td>
+<td>雕版印刷术</td>
+<td>研究雕版印刷术 (僧侣招降距离 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_SANCTITY</code></td>
+<td align="right">231</td>
+<td>圣洁</td>
+<td>研究圣洁 (修道院单位的生命值 +15)</td>
+</tr>
+<tr>
+<td><code>TECH_ILLUMINATION</code></td>
+<td align="right">233</td>
+<td>启发</td>
+<td>研究启发 (成功招降后，修道院单位恢复信仰的速度 +100%)</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_CAMEL_RIDER</code></td>
+<td align="right">236</td>
+<td>重装骆驼兵</td>
+<td>升级到重装骆驼兵：将你的骆驼骑兵升级，生产更为强大的重装骆驼兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ARBALESTER</code></td>
+<td align="right">237</td>
+<td>劲弩手</td>
+<td>升级到劲弩手：将您的弩手升级，生产更为强大、护甲更好，射程更远的劲弩手。</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_SCORPION</code></td>
+<td align="right">239</td>
+<td>重型弩炮</td>
+<td>升级到重型弩炮：将您的弩炮升级，建造更为强大、护甲更好，攻击力更强的重型弩炮。</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_DEMO_SHIP</code></td>
+<td align="right">244</td>
+<td>重型爆破船</td>
+<td>升级到重型爆破船：将您的爆破船升级，建造更为强大的重型爆破船。</td>
+</tr>
+<tr>
+<td><code>TECH_FAST_FIRE_SHIP</code></td>
+<td align="right">246</td>
+<td>快速喷火船</td>
+<td>升级到快速喷火船：将您的喷火船升级，建造更为强大，护甲更好的快速喷火船。</td>
+</tr>
+<tr>
+<td><code>TECH_HAND_CART</code></td>
+<td align="right">249</td>
+<td>手推车</td>
+<td>研究手推车 (村民的运载量 +50%，移动速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_FERVOR</code></td>
+<td align="right">252</td>
+<td>狂热</td>
+<td>研究狂热 (修道院单位的移动速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_LIGHT_CAVALRY</code></td>
+<td align="right">254</td>
+<td>轻型骑兵</td>
+<td>升级到轻型骑兵：将你的斥候骑兵升级，生产更为强大的轻型骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_SIEGE_RAM</code></td>
+<td align="right">255</td>
+<td>重型冲车</td>
+<td>升级到重型冲车：将您的中型冲车升级，建造更为强大，护甲更好的重型冲车。</td>
+</tr>
+<tr>
+<td><code>TECH_ONAGER</code></td>
+<td align="right">257</td>
+<td>中型投石车</td>
+<td>升级到中型投石车：将轻型投石车升级，建造更为强大，护甲更好的中型投石车。</td>
+</tr>
+<tr>
+<td><code>TECH_CHAMPION</code></td>
+<td align="right">264</td>
+<td>冠军剑士</td>
+<td>升级到冠军剑士：将你的双手剑士升级，生产更为强大的冠军剑士。</td>
+</tr>
+<tr>
+<td><code>TECH_PALADIN</code></td>
+<td align="right">265</td>
+<td>游侠</td>
+<td>升级到游侠：将您的重装骑士升级，生产更为强大，护甲更好的游侠。</td>
+</tr>
+<tr>
+<td><code>TECH_STONE_MINING</code></td>
+<td align="right">278</td>
+<td>石矿开采</td>
+<td>研究石矿开采 (村民采集石料速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_STONE_SHAFT_MINING</code></td>
+<td align="right">279</td>
+<td>钻井采石法</td>
+<td>研究钻井采石法 (村民采集石料的速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_TOWN_PATROL</code></td>
+<td align="right">280</td>
+<td>城镇巡逻</td>
+<td>研究城镇巡逻 (建筑的视野 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_CONSCRIPTION</code></td>
+<td align="right">315</td>
+<td>征招</td>
+<td>研究征招 (军事建筑 [攻城武器厂除外] 的训练速度 +33%)</td>
+</tr>
+<tr>
+<td><code>TECH_REDEMPTION</code></td>
+<td align="right">316</td>
+<td>救赎</td>
+<td>研究救赎 (僧侣可以招降大多数敌方建筑和所有攻城武器。有些攻城武器无法远距离招降)</td>
+</tr>
+<tr>
+<td><code>TECH_ATONEMENT</code></td>
+<td align="right">319</td>
+<td>赎罪</td>
+<td>研究赎罪 (僧侣可以招降敌方修道院单位)</td>
+</tr>
+<tr>
+<td><code>TECH_SIEGE_ONAGER</code></td>
+<td align="right">320</td>
+<td>重型投石车</td>
+<td>升级到重型投石车：将您的中型投石车升级，建造更为强大，护甲更好的重型投石车。</td>
+</tr>
+<tr>
+<td><code>TECH_SAPPERS</code></td>
+<td align="right">321</td>
+<td>工兵</td>
+<td>研究工兵 (村民对建筑的攻击力 +15，对冲车的攻击力 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_MURDER_HOLES</code></td>
+<td align="right">322</td>
+<td>近射孔</td>
+<td>研究近射孔 (消除防御工事的最小射程，这样他们可以在基地攻击敌人)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_LONGBOWMAN</code></td>
+<td align="right">360</td>
+<td>精锐长弓兵</td>
+<td>升级到精锐长弓兵：将您的长弓兵升级，生产更为强大，护甲更好的精锐长弓兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CATAPHRACT</code></td>
+<td align="right">361</td>
+<td>精锐甲胄骑兵</td>
+<td>升级到精锐甲胄骑兵：将你的甲胄骑兵升级，生产更为强大的精锐甲胄骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CHU_KO_NU</code></td>
+<td align="right">362</td>
+<td>精锐诸葛弩</td>
+<td>升级到精锐诸葛弩：将您的诸葛弩升级，生产更为强大的精锐诸葛弩。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_THROWING_AXEMAN</code></td>
+<td align="right">363</td>
+<td>精锐掷斧兵</td>
+<td>升级到精锐掷斧兵：将您的掷斧兵升级，生产更为强大，护甲更好的精锐掷斧兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_TEUTONIC_KNIGHT</code></td>
+<td align="right">364</td>
+<td>精锐条顿骑士</td>
+<td>升级到精锐条顿骑士：将您的条顿骑士升级，生产更为强大，护甲更好的精锐条顿骑士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_HUSKARL</code></td>
+<td align="right">365</td>
+<td>精锐近卫军</td>
+<td>升级到精锐近卫军：将您的近卫军升级，生产更为强大，护甲更好的精锐近卫军。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_SAMURAI</code></td>
+<td align="right">366</td>
+<td>精锐日本武士</td>
+<td>升级到精锐日本武士：将您的日本武士升级，生产更为强大的精锐日本武士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_WAR_ELEPHANT</code></td>
+<td align="right">367</td>
+<td>精锐战象</td>
+<td>升级到精锐战象：将您的战象升级，生产更为强大、护甲更好，能造成范围伤害的精锐战象。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_MAMELUKE</code></td>
+<td align="right">368</td>
+<td>精锐马穆鲁克</td>
+<td>升级到精锐马穆鲁克：将您的马穆鲁克升级，生产更为强大，护甲更好的精锐马穆鲁克。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_JANISSARY</code></td>
+<td align="right">369</td>
+<td>精锐苏丹亲兵</td>
+<td>升级到精锐苏丹亲兵：将您的苏丹亲兵升级，生产护甲更好的精锐苏丹亲兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_WOAD_RAIDER</code></td>
+<td align="right">370</td>
+<td>精锐靛蓝突袭者</td>
+<td>升级到精锐靛蓝突袭者：将您的靛蓝突袭者升级，生产更为强大，速度更快的精锐靛蓝突袭者。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_MANGUDAI</code></td>
+<td align="right">371</td>
+<td>精锐蒙古突骑</td>
+<td>升级到精锐蒙古突骑：将您的蒙古突骑升级，生产更为强大，护甲更好的精锐蒙古突骑。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_LONGSHIP</code></td>
+<td align="right">372</td>
+<td>精锐维京长船</td>
+<td>升级到精锐维京长船：将你的维京长船升级，生产更强大的精锐维京长船。</td>
+</tr>
+<tr>
+<td><code>TECH_SHIPWRIGHT</code></td>
+<td align="right">373</td>
+<td>造船匠</td>
+<td>研究造船匠 (船只的木材花费 -20%，建造速度 +50%)。</td>
+</tr>
+<tr>
+<td><code>TECH_CAREENING</code></td>
+<td align="right">374</td>
+<td>修船厂</td>
+<td>研究修船厂 (船只的远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_DRY_DOCK</code></td>
+<td align="right">375</td>
+<td>干船坞</td>
+<td>研究干船坞 (船只的远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CANNON_GALLEON</code></td>
+<td align="right">376</td>
+<td>精锐炮舰</td>
+<td>升级到精锐炮舰：升级你的炮舰，建造精锐炮舰，打造更强大、装备更精良的战舰。</td>
+</tr>
+<tr>
+<td><code>TECH_SIEGE_ENGINEERS</code></td>
+<td align="right">377</td>
+<td>攻城技师</td>
+<td>研究攻城技师 (远程攻城武器和攻城战船的射程 +1。所有攻城武器和攻城战船对建筑的攻击力 +20%；爆破单位对建筑的攻击力 +40%)</td>
+</tr>
+<tr>
+<td><code>TECH_HOARDINGS</code></td>
+<td align="right">379</td>
+<td>围墙</td>
+<td>研究围墙 (城堡、要塞和城楼的生命值 +1000)</td>
+</tr>
+<tr>
+<td><code>TECH_HEATED_SHOT</code></td>
+<td align="right">380</td>
+<td>加热射击</td>
+<td>研究加热射击 (塔楼对船只的攻击力 +125%；城堡和码头对船只的攻击力 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_EAGLE_WARRIOR</code></td>
+<td align="right">384</td>
+<td>鹰勇士</td>
+<td>升级到鹰勇士：将您的鹰斥候升级，生产更为强大的鹰勇士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_BERSERK</code></td>
+<td align="right">398</td>
+<td>精锐狂战士</td>
+<td>升级到精锐狂战士：升级狂战士为精锐狂战士，它更强大，护甲更好。</td>
+</tr>
+<tr>
+<td><code>TECH_SPIES_TREASON</code></td>
+<td align="right">408</td>
+<td>间谍&#x2F;叛徒</td>
+<td>研究间谍&#x2F;叛徒 (看见敌人的视野&#x2F;看见国王)</td>
+</tr>
+<tr>
+<td><code>TECH_HUSSAR</code></td>
+<td align="right">428</td>
+<td>翼骑兵</td>
+<td>升级到翼骑兵：将您的轻型骑兵升级，生产更为强大的翼骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_HALBERDIER</code></td>
+<td align="right">429</td>
+<td>长戟兵</td>
+<td>升级到长戟兵：将您的长枪兵升级，生产更为强大的长戟兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_JAGUAR_WARRIOR</code></td>
+<td align="right">432</td>
+<td>精锐豹勇士</td>
+<td>升级到精锐豹勇士：将您的豹勇士升级，生产更为强大的精锐豹勇士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_EAGLE_WARRIOR</code></td>
+<td align="right">434</td>
+<td>精锐鹰勇士</td>
+<td>升级到精锐鹰勇士：将您的鹰勇士升级，生产更为强大的精锐鹰勇士。</td>
+</tr>
+<tr>
+<td><code>TECH_BLOODLINES</code></td>
+<td align="right">435</td>
+<td>血统</td>
+<td>研究血统 (骑兵单位生命值 +20)</td>
+</tr>
+<tr>
+<td><code>TECH_PARTHIAN_TACTICS</code></td>
+<td align="right">436</td>
+<td>帕提亚战术</td>
+<td>研究帕提亚战术 (骑射手近战护甲 +1&#x2F;远程护甲 +2；对长矛兵系攻击力 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_THUMB_RING</code></td>
+<td align="right">437</td>
+<td>扳指</td>
+<td>研究扳指 (弓兵单位攻击速度 +15%。弓兵单位和掷矛手的攻击准确度为 100%)</td>
+</tr>
+<tr>
+<td><code>TECH_THEOCRACY</code></td>
+<td align="right">438</td>
+<td>神权</td>
+<td>研究神权 (如果一群僧侣在招降同个敌方单位后，只有一个僧侣需要休息恢复)</td>
+</tr>
+<tr>
+<td><code>TECH_HERESY</code></td>
+<td align="right">439</td>
+<td>异教</td>
+<td>研究异教 (被敌方僧侣招降的单位立即死亡，而非变为敌方颜色)</td>
+</tr>
+<tr>
+<td><code>TECH_SUPREMACY</code></td>
+<td align="right">440</td>
+<td>霸权</td>
+<td>研究霸权 (村民的生命值 +40，攻击力 +6，近战护甲 +2&#x2F;远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_HERBAL_MEDICINE</code></td>
+<td align="right">441</td>
+<td>草药</td>
+<td>研究草药 (驻扎在建筑里的单位治疗速度 +500%)</td>
+</tr>
+<tr>
+<td><code>TECH_SHINKICHON</code></td>
+<td align="right">445</td>
+<td>神机箭</td>
+<td>研究神机箭 (火箭推车和龟甲船射程 +1，可发射额外的炮弹)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_TURTLE_SHIP</code></td>
+<td align="right">448</td>
+<td>精锐龟甲船</td>
+<td>升级到精锐龟甲船：将您的龟甲船升级，生产更为强大的精锐龟甲船。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_WAR_WAGON</code></td>
+<td align="right">450</td>
+<td>精锐高丽战车</td>
+<td>升级到精锐高丽战车：将您的高丽战车升级，生产更为强大的精锐高丽战车。</td>
+</tr>
+<tr>
+<td><code>TECH_COUNTER_WEIGHTS</code></td>
+<td align="right">454</td>
+<td>配重块</td>
+<td>研究配重块 (巨型投石机和轻型投石车系攻击力 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_DETINETS</code></td>
+<td align="right">455</td>
+<td>罗斯堡垒</td>
+<td>研究罗斯堡垒 (用额外的木材费用替换城堡和瞭望箭塔系 40% 的石料费用)</td>
+</tr>
+<tr>
+<td><code>TECH_PERFUSION</code></td>
+<td align="right">457</td>
+<td>井喷</td>
+<td>研究井喷 (兵营生产速度 +100%)</td>
+</tr>
+<tr>
+<td><code>TECH_ATLATL</code></td>
+<td align="right">460</td>
+<td>掷矛器</td>
+<td>研究掷矛器 (掷矛手的攻击力 +1，射程 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_WARWOLF</code></td>
+<td align="right">461</td>
+<td>战狼号</td>
+<td>研究战狼号 (巨型投石机可造成爆炸伤害，且准确度更高)</td>
+</tr>
+<tr>
+<td><code>TECH_GREAT_WALL</code></td>
+<td align="right">462</td>
+<td>长城</td>
+<td>研究长城 (城墙、瞭望箭塔系和炮塔的生命值 +30%)</td>
+</tr>
+<tr>
+<td><code>TECH_CHIEFTAINS</code></td>
+<td align="right">463</td>
+<td>酋长</td>
+<td>研究酋长 (步兵对骑兵的攻击力 +5，对骆驼单位的攻击力 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_GREEK_FIRE</code></td>
+<td align="right">464</td>
+<td>希腊之火</td>
+<td>研究希腊之火 (喷火船射程 +1；德罗蒙战舰和炮塔爆炸范围增加)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_GENOESE_CROSSBOWMAN</code></td>
+<td align="right">468</td>
+<td>精锐热那亚弩手</td>
+<td>升级到精锐热那亚弩手：将您的热那亚弩手升级，生产更为强大的精锐热那亚弩手。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_MAGYAR_HUSZAR</code></td>
+<td align="right">472</td>
+<td>精锐马扎尔骠骑</td>
+<td>升级到精锐马扎尔骠骑：将您的马扎尔骠骑升级，生产更为强大的精锐马扎尔骠骑。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_ELEPHANT_ARCHER</code></td>
+<td align="right">481</td>
+<td>精锐骑象射手</td>
+<td>升级到精锐骑象射手：将您的骑象射手升级，生产更为强大的精锐骑象射手。</td>
+</tr>
+<tr>
+<td><code>TECH_STRONGHOLD</code></td>
+<td align="right">482</td>
+<td>堡垒</td>
+<td>研究堡垒 (城堡和瞭望箭塔系的攻击速度 +33%；城堡治疗 7 格范围内的盟军步兵)</td>
+</tr>
+<tr>
+<td><code>TECH_MARAUDERS</code></td>
+<td align="right">483</td>
+<td>掠夺者</td>
+<td>研究掠夺者 (答刺罕骑兵可以在马厩训练)</td>
+</tr>
+<tr>
+<td><code>TECH_YASAMA</code></td>
+<td align="right">484</td>
+<td>射箭孔</td>
+<td>研究射箭孔 (瞭望箭塔系可发射额外的箭矢)</td>
+</tr>
+<tr>
+<td><code>TECH_HUL_CHE_JAVELINEERS</code></td>
+<td align="right">485</td>
+<td>胡尔切掷矛兵</td>
+<td>研究胡尔切掷矛兵 (掷矛手可额外投掷一支长矛)</td>
+</tr>
+<tr>
+<td><code>TECH_EUPSEONG</code></td>
+<td align="right">486</td>
+<td>邑城</td>
+<td>研究邑城 (瞭望箭塔系的射程 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_NOMADS</code></td>
+<td align="right">487</td>
+<td>游牧</td>
+<td>研究游牧 (房屋被摧毁后不会减少人口空间)</td>
+</tr>
+<tr>
+<td><code>TECH_KAMANDARAN</code></td>
+<td align="right">488</td>
+<td>波斯步弓手</td>
+<td>研究波斯步弓手 (生产弓兵系消耗额外木材，而不消耗黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_IRONCLAD</code></td>
+<td align="right">489</td>
+<td>重装甲</td>
+<td>研究重装甲 (攻城武器近战护甲 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_MADRASAH</code></td>
+<td align="right">490</td>
+<td>清真学堂</td>
+<td>研究清真学堂 (僧侣被杀死后返还 33% 的训练费用) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_SIPAHI</code></td>
+<td align="right">491</td>
+<td>西帕希骑兵</td>
+<td>研究西帕希骑兵 (骑射手的生命值 +20)</td>
+</tr>
+<tr>
+<td><code>TECH_INQUISITION</code></td>
+<td align="right">492</td>
+<td>宗教法庭</td>
+<td>研究宗教法庭 (僧侣和传教士的招降速度加快；传教士的招降距离 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_CHIVALRY</code></td>
+<td align="right">493</td>
+<td>骑士精神</td>
+<td>研究骑士精神 (马厩的训练速度 +40%)</td>
+</tr>
+<tr>
+<td><code>TECH_PAVISE</code></td>
+<td align="right">494</td>
+<td>大盾</td>
+<td>研究大盾 (步弓手和意大利佣兵的近战护甲 +1&#x2F;远程护甲 +1) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_SILK_ROAD</code></td>
+<td align="right">499</td>
+<td>丝绸之路</td>
+<td>研究丝绸之路 (贸易单位的费用 -50%)</td>
+</tr>
+</tbody></table>
+<p><strong>ID 500 – 999（107 条）</strong></p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+<th>效果描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ELITE_BOYAR</code></td>
+<td align="right">504</td>
+<td>精锐贵族铁骑</td>
+<td>升级到精锐贵族铁骑：将您的贵族铁骑升级，生产更为强大的精锐贵族铁骑。</td>
+</tr>
+<tr>
+<td><code>TECH_GRAND_TRUNK_ROAD</code></td>
+<td align="right">506</td>
+<td>大干道</td>
+<td>研究大干道 (所有黄金收入速度 +10%；市场交易费用降至 10%)</td>
+</tr>
+<tr>
+<td><code>TECH_SHATAGNI</code></td>
+<td align="right">507</td>
+<td>印度火铳</td>
+<td>研究印度火铳 (火枪手的射程 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_KAMAYUK</code></td>
+<td align="right">509</td>
+<td>精锐印加枪兵长</td>
+<td>升级到精锐印加枪兵长：将您的印加枪兵长升级，生产更为强大的精锐印加枪兵长。</td>
+</tr>
+<tr>
+<td><code>TECH_ORTHODOXY</code></td>
+<td align="right">512</td>
+<td>东正教</td>
+<td>研究东正教 (僧侣有额外护甲) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_DRUZHINA</code></td>
+<td align="right">513</td>
+<td>皇家卫队</td>
+<td>研究皇家卫队 (步兵可造成践踏伤害)</td>
+</tr>
+<tr>
+<td><code>TECH_CORVINIAN_ARMY</code></td>
+<td align="right">514</td>
+<td>科维尼安军队</td>
+<td>研究科维尼安军队 (生产马扎尔骠骑消耗额外食物，而不消耗黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_RECURVE_BOW</code></td>
+<td align="right">515</td>
+<td>反曲弓</td>
+<td>研究反曲弓 (骑射手攻击力 +1，射程 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_ANDEAN_SLING</code></td>
+<td align="right">516</td>
+<td>安第斯弹弓</td>
+<td>研究安第斯弹弓 (掷矛手和投石手无最小射程;投石手攻击力 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_FABRIC_SHIELDS</code></td>
+<td align="right">517</td>
+<td>织物盾</td>
+<td>研究织物盾 (印加枪兵长、投石手和蔷琵战士的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_IMPERIAL_CAMEL_RIDER</code></td>
+<td align="right">521</td>
+<td>帝王骆驼兵</td>
+<td>升级到帝王骆驼兵：将你的重装骆驼兵升级，生产更为强大的帝王骆驼兵。</td>
+</tr>
+<tr>
+<td><code>TECH_REVETMENTS</code></td>
+<td align="right">525</td>
+<td>堑壕</td>
+<td>研究堑壕 [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_SAVAR</code></td>
+<td align="right">526</td>
+<td>萨瓦尔</td>
+<td>升级到萨瓦尔：升级你的重装骑士，让你得以生产更为强大、护甲更坚固的萨瓦尔。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_ORGAN_GUN</code></td>
+<td align="right">563</td>
+<td>精锐风琴炮</td>
+<td>升级到精锐风琴炮：将您的风琴炮升级，生产更为强大的精锐风琴炮。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CAMEL_ARCHER</code></td>
+<td align="right">565</td>
+<td>精锐骆驼射手</td>
+<td>升级到精锐骆驼射手：将您的骆驼射手升级，生产更为强大的精锐骆驼射手。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_GBETO</code></td>
+<td align="right">567</td>
+<td>精锐飞刀女兵</td>
+<td>升级到精锐飞刀女兵：将您的飞刀女兵升级，生产更为强大的精锐飞刀女兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_SHOTEL_WARRIOR</code></td>
+<td align="right">569</td>
+<td>精锐弯刀勇士</td>
+<td>升级到精锐弯刀勇士：将您的弯刀勇士升级，生产更为强大的精锐弯刀勇士。</td>
+</tr>
+<tr>
+<td><code>TECH_ARQUEBUS</code></td>
+<td align="right">573</td>
+<td>火绳枪</td>
+<td>研究火绳枪 (火药单位对移动目标射击的准确度更高)</td>
+</tr>
+<tr>
+<td><code>TECH_ROYAL_HEIRS</code></td>
+<td align="right">574</td>
+<td>龙脉</td>
+<td>研究龙脉 (弯刀勇士和骆驼骑兵受到骑兵单位的伤害 -3)</td>
+</tr>
+<tr>
+<td><code>TECH_TORSION_ENGINES</code></td>
+<td align="right">575</td>
+<td>扭绞机</td>
+<td>研究扭绞机 (攻城武器厂单位的轰炸范围变大)</td>
+</tr>
+<tr>
+<td><code>TECH_TIGUI</code></td>
+<td align="right">576</td>
+<td>蛮王</td>
+<td>研究蛮王 (城镇中心无驻扎单位亦能自动射箭)</td>
+</tr>
+<tr>
+<td><code>TECH_FARIMBA</code></td>
+<td align="right">577</td>
+<td>死士</td>
+<td>研究死士 (骑兵攻击力 +5)</td>
+</tr>
+<tr>
+<td><code>TECH_KASBAH</code></td>
+<td align="right">578</td>
+<td>土堡</td>
+<td>研究土堡 (团队的城堡训练速度 +25%)</td>
+</tr>
+<tr>
+<td><code>TECH_MAGHREBI_CAMELS</code></td>
+<td align="right">579</td>
+<td>马格里布骆驼</td>
+<td>研究马格里布骆驼 (骆驼单位每分钟恢复 15 生命值)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CARAVEL</code></td>
+<td align="right">597</td>
+<td>精锐卡拉维尔战舰</td>
+<td>升级到精锐卡拉维尔战舰：将您的卡拉维尔战舰升级，生产更为强大的精锐卡拉维尔战舰。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_GENITOUR</code></td>
+<td align="right">599</td>
+<td>精锐标枪骑兵</td>
+<td>升级到精锐标枪骑兵：将您的标枪骑兵升级，生产更为强大的精锐标枪骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ARSON</code></td>
+<td align="right">602</td>
+<td>纵火</td>
+<td>研究纵火 (步兵对建筑的攻击力 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_ARROWSLITS</code></td>
+<td align="right">608</td>
+<td>射箭槽</td>
+<td>研究射箭槽 (瞭望箭塔的攻击力 +1、防卫塔的攻击力 +2、大型箭塔和城楼的攻击力 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_BALLISTA_ELEPHANT</code></td>
+<td align="right">615</td>
+<td>精锐重弩战象</td>
+<td>升级到精锐重弩战象：将您的重弩战象升级，生产更为强大的精锐重弩战象。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_KARAMBIT_WARRIOR</code></td>
+<td align="right">617</td>
+<td>精锐爪刀勇士</td>
+<td>升级到精锐爪刀勇士：将您的爪刀勇士升级，生产更为强大的精锐爪刀勇士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_ARAMBAI</code></td>
+<td align="right">619</td>
+<td>精锐飞镖骑兵</td>
+<td>升级到精锐飞镖骑兵：将您的飞镖骑兵升级，生产更为强大的精锐飞镖骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_RATTAN_ARCHER</code></td>
+<td align="right">621</td>
+<td>精锐藤弓兵</td>
+<td>升级到精锐藤弓兵：将您的藤弓兵升级，生产更为强大的精锐藤弓兵。</td>
+</tr>
+<tr>
+<td><code>TECH_TUSK_SWORDS</code></td>
+<td align="right">622</td>
+<td>獠牙剑</td>
+<td>研究獠牙剑 (象兵攻击力 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_DOUBLE_CROSSBOW</code></td>
+<td align="right">623</td>
+<td>双箭弩</td>
+<td>研究双箭弩 (重弩战象和弩炮能一支额外的箭矢)</td>
+</tr>
+<tr>
+<td><code>TECH_THALASSOCRACY</code></td>
+<td align="right">624</td>
+<td>海上霸主</td>
+<td>研究海上霸主 (码头升级至巨港)</td>
+</tr>
+<tr>
+<td><code>TECH_FORCED_LEVY</code></td>
+<td align="right">625</td>
+<td>强征兵役</td>
+<td>研究强征兵役 (生产民兵系消耗额外食物，而不消耗黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_HOWDAH</code></td>
+<td align="right">626</td>
+<td>象轿</td>
+<td>研究象轿 (象兵的近战护甲 +1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_MANIPUR_CAVALRY</code></td>
+<td align="right">627</td>
+<td>曼尼普尔马</td>
+<td>研究曼尼普尔马 (骑兵对步弓手的攻击力 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_CHATRAS</code></td>
+<td align="right">628</td>
+<td>宝伞</td>
+<td>研究宝伞 (象兵生命值 +100)</td>
+</tr>
+<tr>
+<td><code>TECH_PAPER_MONEY</code></td>
+<td align="right">629</td>
+<td>纸币</td>
+<td>研究纸币 (伐木工不仅能产生木材，还能缓慢地产生黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_BATTLE_ELEPHANT</code></td>
+<td align="right">630</td>
+<td>象兵</td>
+<td>生产象兵：行动缓慢但持久力强的骑兵。适于近程攻击敌方单位。不适于攻击僧侣和长矛兵系。升级：攻击力，护甲 (铁匠铺)；速度，生命值，升级到精锐象兵 (马厩)；生产速度 (城堡)；提升抵抗僧侣的能力 (修道院)。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_BATTLE_ELEPHANT</code></td>
+<td align="right">631</td>
+<td>精锐象兵</td>
+<td>升级到精锐象兵：将您的象兵升级，生产更为强大的精锐象兵。</td>
+</tr>
+<tr>
+<td><code>TECH_IMPERIAL_SKIRMISHER</code></td>
+<td align="right">655</td>
+<td>帝王掷矛手</td>
+<td>升级到帝王掷矛手：将您的掷矛手升级，生产更为强大，护甲更好的帝王掷矛手。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_KONNIK</code></td>
+<td align="right">678</td>
+<td>精锐保加利亚骑兵</td>
+<td>升级到精锐保加利亚骑兵：将您的保加利亚骑兵升级，生产更为强大的精锐保加利亚骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_KESHIK</code></td>
+<td align="right">680</td>
+<td>精锐怯薛骑兵</td>
+<td>升级到精锐怯薛骑兵：将你的怯薛骑兵升级，生产更为强大的精锐怯薛骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_KIPCHAK</code></td>
+<td align="right">682</td>
+<td>精锐钦察</td>
+<td>升级到精锐钦察：将您的钦察升级，生产更为强大的精锐钦察。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_LEITIS</code></td>
+<td align="right">684</td>
+<td>精锐烈堤司</td>
+<td>升级到精锐烈堤司：将您的烈堤司升级，生产更大强悍的精锐烈堤司。</td>
+</tr>
+<tr>
+<td><code>TECH_STIRRUPS</code></td>
+<td align="right">685</td>
+<td>马镫</td>
+<td>研究马镫 (骑兵的攻击速度 +33%)</td>
+</tr>
+<tr>
+<td><code>TECH_BAGAINS</code></td>
+<td align="right">686</td>
+<td>协议</td>
+<td>研究协议 (民兵系的近战护甲 +5)</td>
+</tr>
+<tr>
+<td><code>TECH_SILK_ARMOR</code></td>
+<td align="right">687</td>
+<td>丝护甲</td>
+<td>研究丝护甲 (斥候骑兵系、草原枪兵和骑射手近战护甲+1&#x2F;远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_TIMURID_SIEGECRAFT</code></td>
+<td align="right">688</td>
+<td>帖木儿攻城术</td>
+<td>研究帖木儿攻城术 (巨型投石机射程 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_STEPPE_HUSBANDRY</code></td>
+<td align="right">689</td>
+<td>大草原畜牧</td>
+<td>研究大草原畜牧 (斥候骑兵系、草原枪兵和骑射手的训练速度+100%)</td>
+</tr>
+<tr>
+<td><code>TECH_CUMAN_MERCENARIES</code></td>
+<td align="right">690</td>
+<td>库曼雇佣兵</td>
+<td>研究库曼雇佣军 (所有队伍成员能在每个城堡中免费训练 5 名精锐钦察)</td>
+</tr>
+<tr>
+<td><code>TECH_HILL_FORTS</code></td>
+<td align="right">691</td>
+<td>山城堡</td>
+<td>研究山城堡 (城镇中心射程 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_TOWER_SHIELDS</code></td>
+<td align="right">692</td>
+<td>塔盾</td>
+<td>研究塔盾 (长矛兵系和掷矛手远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_STEPPE_LANCER</code></td>
+<td align="right">715</td>
+<td>精锐草原枪兵</td>
+<td>升级到精锐草原枪兵：将您的草原枪兵升级，生产更为强大的精锐草原枪兵。</td>
+</tr>
+<tr>
+<td><code>TECH_SUPPLIES</code></td>
+<td align="right">716</td>
+<td>供给</td>
+<td>研究供给 (民兵系食物费用 -15) [已退役：无任何文明科技树引用]</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_COUSTILLIER</code></td>
+<td align="right">751</td>
+<td>精锐马上轻装兵</td>
+<td>升级到精锐马上轻装兵：将您的马上轻装兵升级，生产更为强大的精锐马上轻装兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_SERJEANT</code></td>
+<td align="right">753</td>
+<td>精锐萨金特卫兵</td>
+<td>升级到精锐萨金特卫兵：将您的萨金特卫兵升级，生产更为强大的精锐萨金特卫兵。</td>
+</tr>
+<tr>
+<td><code>TECH_BURGUNDIAN_VINEYARDS</code></td>
+<td align="right">754</td>
+<td>勃艮第葡萄园</td>
+<td>研究勃艮第葡萄园 (农夫不仅能产生食物，还能缓慢地产生黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_FLEMISH_REVOLUTION</code></td>
+<td align="right">755</td>
+<td>弗拉芒革命</td>
+<td>研究弗拉芒革命 (将所有现有村民转变为弗拉芒民兵)</td>
+</tr>
+<tr>
+<td><code>TECH_FIRST_CRUSADE</code></td>
+<td align="right">756</td>
+<td>第一次十字军东征</td>
+<td>研究第一次十字军东征 (城镇中心最多 5 个，每个可产生 5 名萨金特卫兵；提升单位抵抗招降的能力)</td>
+</tr>
+<tr>
+<td><code>TECH_HAUBERK</code></td>
+<td align="right">757</td>
+<td>锁子甲</td>
+<td>研究锁子甲 (骑士系的近战护甲 +1&#x2F;远程护甲 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_OBUCH</code></td>
+<td align="right">779</td>
+<td>精锐奥布奇战锤兵</td>
+<td>升级到精锐奥布奇战锤兵：将您的奥布奇战锤兵升级，生产更为强大的精锐奥布奇战锤兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_HUSSITE_WAGON</code></td>
+<td align="right">781</td>
+<td>精锐胡斯派战车</td>
+<td>升级到精锐胡斯派战车：将您的胡斯派战车升级，生产更为强大的精锐胡斯派战车。</td>
+</tr>
+<tr>
+<td><code>TECH_SZLACHTA_PRIVILEGES</code></td>
+<td align="right">782</td>
+<td>贵族特权</td>
+<td>研究贵族特权 (骑士系的黄金消耗 -60%)</td>
+</tr>
+<tr>
+<td><code>TECH_LECHITIC_LEGACY</code></td>
+<td align="right">783</td>
+<td>列克提克遗产</td>
+<td>研究列克提克遗产 (斥候骑兵系可造成践踏伤害)</td>
+</tr>
+<tr>
+<td><code>TECH_WAGENBURG_TACTICS</code></td>
+<td align="right">784</td>
+<td>大车阵战术</td>
+<td>研究大车阵战术 (火药单位的移动速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_HUSSITE_REFORMS</code></td>
+<td align="right">785</td>
+<td>胡斯革新</td>
+<td>研究胡斯革新 (僧侣和修道院科技消耗食物，而不消耗黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_WINGED_HUSSAR</code></td>
+<td align="right">786</td>
+<td>波兰翼骑兵</td>
+<td>升级到波兰翼骑兵：将您的轻型骑兵升级，生产更为强大的波兰翼骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_HOUFNICE</code></td>
+<td align="right">787</td>
+<td>榴弹炮</td>
+<td>升级到榴弹炮：将您的手推炮升级，生产更为强大的榴弹炮。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_URUMI_SWORDSMAN</code></td>
+<td align="right">826</td>
+<td>精锐乌鲁米剑士</td>
+<td>升级到精锐乌鲁米剑士：将你的乌鲁米剑士升级，生产更为强大的精锐乌鲁米剑士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_RATHA</code></td>
+<td align="right">828</td>
+<td>精锐战车</td>
+<td>升级到精锐战车：将你的战车升级，生产更为强大的精锐战车。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CHAKRAM_THROWER</code></td>
+<td align="right">830</td>
+<td>精锐飞轮刃投掷手</td>
+<td>升级到精锐飞轮刃投掷手：将您的飞轮刃投掷手升级，生产更为强大的精锐飞轮刃投掷手。</td>
+</tr>
+<tr>
+<td><code>TECH_MEDICAL_CORPS</code></td>
+<td align="right">831</td>
+<td>医疗部队</td>
+<td>研究医疗部队 (象兵单位每分钟恢复 30 生命值)</td>
+</tr>
+<tr>
+<td><code>TECH_WOOTZ_STEEL</code></td>
+<td align="right">832</td>
+<td>乌兹钢</td>
+<td>研究乌兹钢 (步兵和骑兵的攻击能无视护甲)</td>
+</tr>
+<tr>
+<td><code>TECH_PAIKS</code></td>
+<td align="right">833</td>
+<td>派</td>
+<td>研究派 (战车和象兵单位的攻击速度 +20%)</td>
+</tr>
+<tr>
+<td><code>TECH_MAHAYANA</code></td>
+<td align="right">834</td>
+<td>大乘佛教</td>
+<td>研究大乘佛教 (村民和僧侣所占人口空间 -10%)</td>
+</tr>
+<tr>
+<td><code>TECH_KSHATRIYAS</code></td>
+<td align="right">835</td>
+<td>刹帝利</td>
+<td>研究刹帝利 (军事单位的食物消耗 -25%)</td>
+</tr>
+<tr>
+<td><code>TECH_FRONTIER_GUARDS</code></td>
+<td align="right">836</td>
+<td>边防部队</td>
+<td>研究边防部队 (骆驼骑兵和骑象弓兵的近战护甲 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_SIEGE_ELEPHANT</code></td>
+<td align="right">838</td>
+<td>攻城战象</td>
+<td>升级到攻城战象</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_GHULAM</code></td>
+<td align="right">840</td>
+<td>精锐古拉姆</td>
+<td>升级到精锐古拉姆：将您的古拉姆升级，生产更为强大的精锐古拉姆。</td>
+</tr>
+<tr>
+<td><code>TECH_E_SHRIVAMSHA_RIDER</code></td>
+<td align="right">843</td>
+<td>精锐施里瓦姆沙骑手</td>
+<td>升级到精锐施里瓦姆沙骑手：将您的施里瓦姆沙骑手升级，生产更为强大的精锐施里瓦姆沙骑手。</td>
+</tr>
+<tr>
+<td><code>TECH_GAMBESONS</code></td>
+<td align="right">875</td>
+<td>软甲</td>
+<td>研究软甲 (民兵系、火枪骑兵和瓦兰吉卫队的远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CENTURION</code></td>
+<td align="right">882</td>
+<td>精锐百夫长</td>
+<td>升级至精锐百夫长：升级你的百夫长，让你得以创造更强大的精锐百夫长。</td>
+</tr>
+<tr>
+<td><code>TECH_BALLISTAS</code></td>
+<td align="right">883</td>
+<td>弩炮</td>
+<td>研究弩炮 (蝎式弩攻击速度 +33%；箭船系攻击力 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_COMITATENSES</code></td>
+<td align="right">884</td>
+<td>野战军</td>
+<td>研究野战军 (民兵系、骑士系和百夫长的训练速度 +50%，并获得冲锋攻击的能力)</td>
+</tr>
+<tr>
+<td><code>TECH_LEGIONARY</code></td>
+<td align="right">885</td>
+<td>罗马军</td>
+<td>升级至罗马军：升级你的长剑士，让你得以生产更强大、护甲更好的罗马军。</td>
+</tr>
+<tr>
+<td><code>TECH_PIROTECHNIA</code></td>
+<td align="right">902</td>
+<td>烟火之术</td>
+<td>烟火之术（火枪手造成的穿透伤害 +15%，且准确度提高）</td>
+</tr>
+<tr>
+<td><code>TECH_CARRACK</code></td>
+<td align="right">904</td>
+<td>大帆船</td>
+<td>建造大帆船：可进行近距离近战攻击的战船。适于攻击喷火船。不适于攻击箭船。升级：攻击力 (铁匠铺)；护甲，费用，速度 (大学)；提升抵抗僧侣的能力 (修道院)。</td>
+</tr>
+<tr>
+<td><code>TECH_DEMOLITION_SHIP</code></td>
+<td align="right">905</td>
+<td>爆破船</td>
+<td>升级到爆破船：升级你的爆破船，并让你可以建造更为强大的爆破船。</td>
+</tr>
+<tr>
+<td><code>TECH_FISHING_LINES</code></td>
+<td align="right">906</td>
+<td>钓线</td>
+<td>研究钓线：钓线采集速度 +10%，运载量 +5。</td>
+</tr>
+<tr>
+<td><code>TECH_CARVEL_HULL</code></td>
+<td align="right">907</td>
+<td>外板平接船体</td>
+<td>研究外板平接船体：船只移动速度 +10%。</td>
+</tr>
+<tr>
+<td><code>TECH_CLINKER_CONSTRUCTION</code></td>
+<td align="right">908</td>
+<td>鱼鳞式建造法</td>
+<td>研究鱼鳞式建造法：船只移动速度 +10%。</td>
+</tr>
+<tr>
+<td><code>TECH_SIPHONS</code></td>
+<td align="right">909</td>
+<td>虹吸管</td>
+<td>研究虹吸管：喷火船获得一次爆炸冲锋攻击。</td>
+</tr>
+<tr>
+<td><code>TECH_INCENDIARIES</code></td>
+<td align="right">910</td>
+<td>燃烧弹</td>
+<td>研究燃烧剂：喷火船沉没时会引爆，扩大爆炸范围。</td>
+</tr>
+<tr>
+<td><code>TECH_E_COMPOSITE_BOWMAN</code></td>
+<td align="right">918</td>
+<td>精锐复合弓箭手</td>
+<td>升级到精锐复合弓箭手：升级你的复合弓箭手，让你得以生产更为强大的精锐复合弓箭手。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_MONASPA</code></td>
+<td align="right">920</td>
+<td>精锐莫纳斯帕</td>
+<td>升级到精锐莫纳斯帕：升级你的莫纳斯帕，让你得以生产更为强大的精锐莫纳斯帕。</td>
+</tr>
+<tr>
+<td><code>TECH_FERETERS</code></td>
+<td align="right">921</td>
+<td>费雷特斯</td>
+<td>研究费雷特斯 (除长矛兵系以外的步兵生命值 +30；牧师战士治疗速度 +100%)</td>
+</tr>
+<tr>
+<td><code>TECH_CILICIAN_FLEET</code></td>
+<td align="right">922</td>
+<td>奇里乞亚舰队</td>
+<td>研究奇里乞亚舰队 (爆破船爆炸范围 +20%，舰系和喷火船射程 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_SVAN_TOWERS</code></td>
+<td align="right">923</td>
+<td>斯万箭塔</td>
+<td>研究斯万箭塔 (防御工事攻击力 +2；瞭望箭塔系造成穿透伤害)</td>
+</tr>
+<tr>
+<td><code>TECH_AZNAURI_CAVALRY</code></td>
+<td align="right">924</td>
+<td>阿兹瑙里骑兵</td>
+<td>研究阿兹瑙里骑兵 (骑兵单位所占人口空间 -20%)</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_ROCKET_CART</code></td>
+<td align="right">980</td>
+<td>重型火箭推车</td>
+<td>升级到重型火箭推车：升级你的火箭推车，生产更为强大的重型火箭推车。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_FIRE_LANCER</code></td>
+<td align="right">982</td>
+<td>精锐火矛兵</td>
+<td>升级到精锐火矛兵：升级你的火矛兵，生产更为强大的精锐火矛兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_IRON_PAGODA</code></td>
+<td align="right">991</td>
+<td>精锐铁浮屠</td>
+<td>升级到精锐铁浮屠：升级你的铁浮屠，生产更为强大的精锐铁浮屠。</td>
+</tr>
+<tr>
+<td><code>TECH_FORTIFIED_BASTIONS</code></td>
+<td align="right">996</td>
+<td>强化堡垒</td>
+<td>研究强化堡垒 (防御工事和城镇中心每分钟恢复 500 生命值)</td>
+</tr>
+<tr>
+<td><code>TECH_THUNDERCLAP_BOMBS</code></td>
+<td align="right">997</td>
+<td>霹雳炸弹</td>
+<td>研究霹雳炸弹 (火箭推车、掷弹兵和楼船在被击败时爆炸。炮弹会产生额外爆炸)</td>
+</tr>
+</tbody></table>
+<p><strong>ID 1000 – 1199（54 条）</strong></p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+<th>效果描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ELITE_LIAO_DAO</code></td>
+<td align="right">1002</td>
+<td>精锐辽刀兵</td>
+<td>升级到精锐辽刀兵：升级你的辽刀兵，生产更为强大的精锐辽刀兵。</td>
+</tr>
+<tr>
+<td><code>TECH_LAMELLAR_ARMOR</code></td>
+<td align="right">1006</td>
+<td>札甲</td>
+<td>研究札甲 (步兵和掷矛手可反弹 25% 近战伤害给攻击者)</td>
+</tr>
+<tr>
+<td><code>TECH_ORDO_CAVALRY</code></td>
+<td align="right">1007</td>
+<td>斡鲁朵骑兵</td>
+<td>研究斡鲁朵骑兵 (骑兵可在战斗中恢复生命值)</td>
+</tr>
+<tr>
+<td><code>TECH_DRAGON_SHIP</code></td>
+<td align="right">1010</td>
+<td>龙舟</td>
+<td>升级到龙舟：升级喷火船，生产更为强大的龙舟。</td>
+</tr>
+<tr>
+<td><code>TECH_TRANSHUMANCE</code></td>
+<td align="right">1012</td>
+<td>畜牧季移</td>
+<td>研究畜牧季移 (新牧场提供的动物 +3)</td>
+</tr>
+<tr>
+<td><code>TECH_PASTORALISM</code></td>
+<td align="right">1013</td>
+<td>畜牧业</td>
+<td>研究畜牧业 (新牧场提供的动物 +2)</td>
+</tr>
+<tr>
+<td><code>TECH_DOMESTICATION</code></td>
+<td align="right">1014</td>
+<td>驯化术</td>
+<td>研究驯化术 (新牧场提供的动物 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_HEI_GUANG_CAVALRY</code></td>
+<td align="right">1033</td>
+<td>重装黑光铠骑兵</td>
+<td>升级为重装黑光铠骑兵：升级你的黑光铠骑兵，并让你可以生产更强大的重装黑光铠骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_TIGER_CAVALRY</code></td>
+<td align="right">1036</td>
+<td>精锐虎豹骑</td>
+<td>升级为精锐虎豹骑：升级你的虎豹骑，并让你可以生产更强大的精锐虎豹骑。</td>
+</tr>
+<tr>
+<td><code>TECH_TUNTIAN</code></td>
+<td align="right">1061</td>
+<td>屯田</td>
+<td>研究屯田 (士兵自动生产食物)</td>
+</tr>
+<tr>
+<td><code>TECH_MING_GUANG_ARMOR</code></td>
+<td align="right">1062</td>
+<td>明光铠</td>
+<td>研究明光铠 (骑兵单位近战护甲 +4)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_WHITE_FEATHER_GUARD</code></td>
+<td align="right">1064</td>
+<td>精锐白毦兵</td>
+<td>升级为精锐白毦卫：升级你的白毦卫，并让你可以生产更强大的精锐白毦卫。</td>
+</tr>
+<tr>
+<td><code>TECH_BOLT_MAGAZINE</code></td>
+<td align="right">1069</td>
+<td>弩箭匣</td>
+<td>研究弩箭匣 (弓兵系、战车和楼船可发射更多弩箭)</td>
+</tr>
+<tr>
+<td><code>TECH_COILED_SERPENT_ARRAY</code></td>
+<td align="right">1070</td>
+<td>盘蛇阵</td>
+<td>研究盘蛇阵 (长矛兵和白毦卫彼此靠近时获得额外的生命值)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_FIRE_ARCHER</code></td>
+<td align="right">1074</td>
+<td>精锐火焰弓箭手</td>
+<td>升级为精锐火焰弓箭手：升级你的火焰弓箭手，并让你可以生产更强大的精锐火焰弓箭手。</td>
+</tr>
+<tr>
+<td><code>TECH_RED_CLIFFS_TACTICS</code></td>
+<td align="right">1080</td>
+<td>赤壁战术</td>
+<td>研究赤壁战术 (爆破船和火焰弓箭手对船舰和建筑造成火焰伤害)</td>
+</tr>
+<tr>
+<td><code>TECH_SITTING_TIGER</code></td>
+<td align="right">1081</td>
+<td>卧虎</td>
+<td>研究卧虎 (牵引抛石机和楼船巨型投石机武器可发射额外的炮弹)</td>
+</tr>
+<tr>
+<td><code>TECH_SPARABARAS</code></td>
+<td align="right">1110</td>
+<td>波斯步兵方阵</td>
+<td>研究波斯步兵方阵 (长生军和长矛兵护甲 +2&#x2F;+1)</td>
+</tr>
+<tr>
+<td><code>TECH_REED_ARROWS</code></td>
+<td align="right">1111</td>
+<td>芦苇箭</td>
+<td>研究芦苇箭 (弓兵、远程长生军和箭船的攻击速度提升 25%；禁用波斯步兵方阵)</td>
+</tr>
+<tr>
+<td><code>TECH_SCYTHED_CHARIOTS</code></td>
+<td align="right">1112</td>
+<td>刀轮战车</td>
+<td>研究刀轮战车 (战车践踏范围增大；禁用萨加里斯斧)</td>
+</tr>
+<tr>
+<td><code>TECH_SAGARIS</code></td>
+<td align="right">1113</td>
+<td>萨加里斯斧</td>
+<td>研究萨加里斯斧 (骑兵对单位造成的无法格挡伤害+2；禁用刀轮战车)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_IMMORTAL_MELEE</code></td>
+<td align="right">1115</td>
+<td>精锐长生军 (近战)</td>
+<td>升级为精锐长生军：将你的长生军升级，生产更为强大的精锐长生军。</td>
+</tr>
+<tr>
+<td><code>TECH_TAXIARCHS</code></td>
+<td align="right">1120</td>
+<td>联队长</td>
+<td>研究联队长 (将军还会为附近近战单位额外提供 +1 攻击力，光环范围 +33%；禁用三列桨手制)</td>
+</tr>
+<tr>
+<td><code>TECH_TRIERARCHIES</code></td>
+<td align="right">1121</td>
+<td>三列桨手制</td>
+<td>研究三列桨手制 (单列桨座战船系冲锋攻击造成额外范围伤害，并且充能更快；禁用联队长)</td>
+</tr>
+<tr>
+<td><code>TECH_EISPHORA</code></td>
+<td align="right">1122</td>
+<td>伊斯富纳</td>
+<td>研究 Eisphora (用额外的食物费用取代 50% 的希腊步兵黄金费用；禁用提洛同盟)</td>
+</tr>
+<tr>
+<td><code>TECH_DELIAN_LEAGUE</code></td>
+<td align="right">1123</td>
+<td>提洛同盟</td>
+<td>研究提洛同盟 (港口和造船厂附近的战船攻击速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_STRATEGOS</code></td>
+<td align="right">1125</td>
+<td>精锐将军</td>
+<td>升级为精锐将军：将你的将军升级，生产更为强大的精锐将军。</td>
+</tr>
+<tr>
+<td><code>TECH_HELOT_LEVIES</code></td>
+<td align="right">1130</td>
+<td>希洛人征兵</td>
+<td>研究希洛人征兵 (长矛兵、掷矛手和村民的训练速度提升 50%；禁用希腊短剑)</td>
+</tr>
+<tr>
+<td><code>TECH_AGOGE</code></td>
+<td align="right">1131</td>
+<td>阿戈格</td>
+<td>研究斯巴达特训 (在其他希腊步兵附近时，希腊步兵可额外获得 +1&#x2F;+1 护甲；禁用伯罗奔尼撒同盟)</td>
+</tr>
+<tr>
+<td><code>TECH_XYPHOS</code></td>
+<td align="right">1132</td>
+<td>希腊短剑</td>
+<td>研究希腊短剑 (附近每有 5 个敌方军事单位，则希腊步兵和单列桨座战船系的攻击力 +1 [最大 +3]；禁用希洛人征兵)</td>
+</tr>
+<tr>
+<td><code>TECH_PELOPONNESIAN_LEAGUE</code></td>
+<td align="right">1133</td>
+<td>伯罗奔尼撒同盟</td>
+<td>研究伯罗奔尼撒同盟 (单列桨座战船系对箭船的攻击力 +5，堡垒产出黄金；禁用斯巴达教育)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_HIPPEUS</code></td>
+<td align="right">1135</td>
+<td>精锐三百卫士</td>
+<td>升级为精锐三百卫士：将你的三百卫士升级，生产更为强大的精锐三百卫士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_HOPLITE</code></td>
+<td align="right">1137</td>
+<td>精锐希腊步兵</td>
+<td>升级为精锐希腊步兵：将你的希腊步兵升级，生产更为强大的精锐希腊步兵。</td>
+</tr>
+<tr>
+<td><code>TECH_WAR_LEMBOS</code></td>
+<td align="right">1144</td>
+<td>战争小艇</td>
+<td>升级为战争小艇：将你的小艇升级，生产更为强大的战争小艇。</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_LEMBOS</code></td>
+<td align="right">1145</td>
+<td>重型小艇</td>
+<td>升级为重型小艇：将你的战争小艇升级，生产更为强大的重型小艇。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_LEMBOS</code></td>
+<td align="right">1146</td>
+<td>精锐小艇</td>
+<td>升级到精锐小艇：将你的重型小艇升级，生产更为强大的精锐小艇。</td>
+</tr>
+<tr>
+<td><code>TECH_BIREME</code></td>
+<td align="right">1148</td>
+<td>桡桨船</td>
+<td>升级到桡桨船：将你的单列桨座战船升级，生产更为强大的桡桨船。</td>
+</tr>
+<tr>
+<td><code>TECH_TRIREME</code></td>
+<td align="right">1149</td>
+<td>三列桨座战船</td>
+<td>升级到三列桨座战船：在尼阿尔库斯到来时解锁。升级你的桡桨船，这样你就可以生产更为强大的三列桨座战船。</td>
+</tr>
+<tr>
+<td><code>TECH_WAR_GALLEY</code></td>
+<td align="right">1151</td>
+<td>战船</td>
+<td>升级到战船：将你的箭船升级，生产更为强大的战船。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_GALLEY</code></td>
+<td align="right">1152</td>
+<td>精锐箭船</td>
+<td>升级到精锐箭船：在尼阿尔库斯到来时解锁。升级你的战船，这样你就可以生产更为强大的精锐箭船。</td>
+</tr>
+<tr>
+<td><code>TECH_INCENDIARY_SHIP</code></td>
+<td align="right">1154</td>
+<td>燃烧船</td>
+<td>升级到燃烧船：将你的燃烧木筏升级，生产更为强大的燃烧船。</td>
+</tr>
+<tr>
+<td><code>TECH_HEAVY_INCEN_SHIP</code></td>
+<td align="right">1155</td>
+<td>重型燃烧船</td>
+<td>升级到重型燃烧船：将你的燃烧船升级，生产更为强大的重型燃烧船。</td>
+</tr>
+<tr>
+<td><code>TECH_JIAN_SWORDSMAN</code></td>
+<td align="right">1156</td>
+<td>剑士</td>
+<td>升级到剑士：将你的链锤兵升级，生产更为强大的剑士。</td>
+</tr>
+<tr>
+<td><code>TECH_ONAGER_SHIP</code></td>
+<td align="right">1159</td>
+<td>中型投石船</td>
+<td>升级到中型投石船：在尼阿尔库斯到来时解锁。升级你的投石船，这样你就可以生产更为强大的中型投石船。</td>
+</tr>
+<tr>
+<td><code>TECH_SCOOP_NETS</code></td>
+<td align="right">1161</td>
+<td>捞网</td>
+<td>研究拖网 (捕鱼船工作速度提高 15%，携带资源 +10)</td>
+</tr>
+<tr>
+<td><code>TECH_DRUMS</code></td>
+<td align="right">1162</td>
+<td>鼓</td>
+<td>研究鼓 (不会爆炸的船只移动速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_HYPOZOMATA</code></td>
+<td align="right">1165</td>
+<td>支撑缆绳</td>
+<td>研究支撑缆绳 (船只远程护甲 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_SHIPWRIGHT_2</code></td>
+<td align="right">1167</td>
+<td>造船匠</td>
+<td>研究造船匠 (船只的木材花费 -20%；建造速度 +50%) [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_WAR_CHARIOT</code></td>
+<td align="right">1171</td>
+<td>精锐战车</td>
+<td>升级到精锐战车：将你的战车升级，生产更为强大的精锐战车。</td>
+</tr>
+<tr>
+<td><code>TECH_BATTLE_DRILLS</code></td>
+<td align="right">1173</td>
+<td>战斗操练</td>
+<td>研究战斗操练 (征兵系攻击力 +3，对建筑的攻击力 +1，对突击步兵的攻击力 +2，视野 +1)</td>
+</tr>
+<tr>
+<td><code>TECH_PARAGON</code></td>
+<td align="right">1174</td>
+<td>精锐步兵</td>
+<td>升级到精锐步兵：将你的剑士升级，生产更为强大的精锐。</td>
+</tr>
+<tr>
+<td><code>TECH_ECONOMIC_TOWN_CENTER</code></td>
+<td align="right">1195</td>
+<td>经济城镇中心</td>
+<td>将这个城镇中心升级到经济城镇中心 (附近村民采集速度 +10%)</td>
+</tr>
+<tr>
+<td><code>TECH_MILITARY_TOWN_CENTER</code></td>
+<td align="right">1196</td>
+<td>军事城镇中心</td>
+<td>将这个城镇中心升级到军事城镇中心 (附近军事单位治疗和移动速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_DEFENSIVE_TOWN_CENTER</code></td>
+<td align="right">1197</td>
+<td>防御城镇中心</td>
+<td>将这个城镇中心升级为防御城镇中心 (更加坚固且附近单位攻击速度提升 15%)</td>
+</tr>
+</tbody></table>
+<p><strong>ID 1200 – 1299（32 条）</strong></p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+<th>效果描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ECONOMIC_POLICY</code></td>
+<td align="right">1202</td>
+<td>经济政策</td>
+<td>将当前政策更改为经济政策 (伐木工采集食物的速度 +50%)</td>
+</tr>
+<tr>
+<td><code>TECH_NAVAL_POLICY</code></td>
+<td align="right">1203</td>
+<td>海军政策</td>
+<td>将当前政策更改为海军政策 (步弓手和战船花费 -20% 黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_MILITARY_POLICY</code></td>
+<td align="right">1204</td>
+<td>军事政策</td>
+<td>将当前政策更改为军事政策 (军事生产建筑的木材消耗更少，近战军事单位完成击杀可获得黄金)</td>
+</tr>
+<tr>
+<td><code>TECH_MERCHANT_TRADE_RATES</code></td>
+<td align="right">1215</td>
+<td>商业贸易费用</td>
+<td>循环科技组组内第 1&#x2F;3 个</td>
+</tr>
+<tr>
+<td><code>TECH_MERCHANT_TRADE_RATES_2</code></td>
+<td align="right">1216</td>
+<td>商业贸易费用</td>
+<td>循环科技组组内第 2&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_MERCHANT_TRADE_RATES_3</code></td>
+<td align="right">1217</td>
+<td>商业贸易费用</td>
+<td>循环科技组组内第 3&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_EPHORATE</code></td>
+<td align="right">1223</td>
+<td>监督官</td>
+<td>研究监督官 (军事执政官可让附近士兵恢复生命值；禁用莫拉伊)</td>
+</tr>
+<tr>
+<td><code>TECH_MORAI</code></td>
+<td align="right">1224</td>
+<td>莫拉伊</td>
+<td>研究莫拉伊 (军事执政官光环范围增加，还可以让附近军事单位移动速度提升 15%；禁用监督官)</td>
+</tr>
+<tr>
+<td><code>TECH_SKEUOPHOROI</code></td>
+<td align="right">1225</td>
+<td>器具侍从</td>
+<td>研究器具侍从 (军事执政官攻击 +2，并获得抵御投射武器的护盾)</td>
+</tr>
+<tr>
+<td><code>TECH_HIPPAGRETAI</code></td>
+<td align="right">1226</td>
+<td>三百长</td>
+<td>研究三百长 (军事执政官生命值 +50)</td>
+</tr>
+<tr>
+<td><code>TECH_ANTIQUITY_MODE_MERCHANT_TRADE_RATES</code></td>
+<td align="right">1263</td>
+<td>古代模式商人交易费用</td>
+<td>可切换科技组组内第 1&#x2F;5 个</td>
+</tr>
+<tr>
+<td><code>TECH_ANTIQUITY_MODE_MERCHANT_TRADE_RATES_2</code></td>
+<td align="right">1264</td>
+<td>古代模式商人交易费用</td>
+<td>可切换科技组组内第 2&#x2F;5 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_ANTIQUITY_MODE_MERCHANT_TRADE_RATES_3</code></td>
+<td align="right">1265</td>
+<td>古代模式商人交易费用</td>
+<td>可切换科技组组内第 3&#x2F;5 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_BARRACKS_NORMAL_DOCTRINES</code></td>
+<td align="right">1275</td>
+<td>兵营普通训令</td>
+<td>循环科技组组内第 1&#x2F;3 个</td>
+</tr>
+<tr>
+<td><code>TECH_BARRACKS_NORMAL_DOCTRINES_2</code></td>
+<td align="right">1276</td>
+<td>兵营普通训令</td>
+<td>循环科技组组内第 2&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_BARRACKS_NORMAL_DOCTRINES_3</code></td>
+<td align="right">1277</td>
+<td>兵营普通训令</td>
+<td>循环科技组组内第 3&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_ARCHERY_RANGE_NORMAL_DOCTRINES</code></td>
+<td align="right">1278</td>
+<td>靶场普通训令</td>
+<td>循环科技组组内第 1&#x2F;3 个</td>
+</tr>
+<tr>
+<td><code>TECH_ARCHERY_RANGE_NORMAL_DOCTRINES_2</code></td>
+<td align="right">1279</td>
+<td>靶场普通训令</td>
+<td>循环科技组组内第 2&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_ARCHERY_RANGE_NORMAL_DOCTRINES_3</code></td>
+<td align="right">1280</td>
+<td>靶场普通训令</td>
+<td>循环科技组组内第 3&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_STABLE_NORMAL_DOCTRINES</code></td>
+<td align="right">1281</td>
+<td>马厩普通训令</td>
+<td>循环科技组组内第 1&#x2F;3 个</td>
+</tr>
+<tr>
+<td><code>TECH_STABLE_NORMAL_DOCTRINES_2</code></td>
+<td align="right">1282</td>
+<td>马厩普通训令</td>
+<td>循环科技组组内第 2&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_STABLE_NORMAL_DOCTRINES_3</code></td>
+<td align="right">1283</td>
+<td>马厩普通训令</td>
+<td>循环科技组组内第 3&#x2F;3 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_VETERAN_CHILIARCHS</code></td>
+<td align="right">1284</td>
+<td>老练千夫长</td>
+<td>研究老练千夫长 (招募训令有效性 +33%；禁用世界尽头)</td>
+</tr>
+<tr>
+<td><code>TECH_ENDS_OF_THE_WORLD</code></td>
+<td align="right">1285</td>
+<td>世界尽头</td>
+<td>研究世界尽头 (强化哨站可治疗附近单位；禁用老练千夫长)</td>
+</tr>
+<tr>
+<td><code>TECH_PEZHETAIROI</code></td>
+<td align="right">1286</td>
+<td>马其顿方阵步兵</td>
+<td>研究马其顿方阵步兵 (方阵步兵的最小攻击范围减半；禁用萨里沙骑兵)</td>
+</tr>
+<tr>
+<td><code>TECH_SARISSOPHOROI</code></td>
+<td align="right">1287</td>
+<td>萨里沙骑兵</td>
+<td>研究萨里沙骑兵 (伙伴骑兵获得快速冲锋攻击；禁用马其顿方阵步兵)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_COMPANION_CAVALRY</code></td>
+<td align="right">1289</td>
+<td>精锐伙伴骑兵</td>
+<td>升级为精锐伙伴骑兵：升级你的伙伴骑兵，并让你可以生产更强大的精锐伙伴骑兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_PHALANGITE</code></td>
+<td align="right">1291</td>
+<td>精锐方阵步兵</td>
+<td>升级到精锐方阵步兵：升级你的方阵步兵，生产更为强大的精锐方阵步兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ODOMANTIAN_RAIDERS</code></td>
+<td align="right">1296</td>
+<td>奥多曼蒂突袭者</td>
+<td>研究奥多曼蒂突袭者 (步兵和骑兵通过杀死敌方单位获得黄金；禁用迪亚掠夺者)</td>
+</tr>
+<tr>
+<td><code>TECH_DII_PLUNDERERS</code></td>
+<td align="right">1297</td>
+<td>迪亚掠夺者</td>
+<td>研究迪亚掠夺者 (长矛兵系、征兵&#x2F;希腊步兵系和长柄逆刃刀战士分别通过摧毁敌方建筑获得木材&#x2F;食物&#x2F;黄金；禁用奥多曼蒂突袭者)</td>
+</tr>
+<tr>
+<td><code>TECH_BESSIAN_METALWORKING</code></td>
+<td align="right">1298</td>
+<td>贝锡安金属利用</td>
+<td>研究贝锡安金属利用 (征兵系、长矛骑兵系和长柄逆刃刀战士可在攻击时撕裂敌方单位的护甲；禁用轻装盾兵)</td>
+</tr>
+<tr>
+<td><code>TECH_PELTASTS</code></td>
+<td align="right">1299</td>
+<td>轻装盾兵</td>
+<td>研究轻装盾兵 (掷矛手投射物可对所有单位造成穿透伤害；禁用贝锡安金属利用)</td>
+</tr>
+</tbody></table>
+<p><strong>ID 1300 – 1399（23 条）</strong></p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+<th>效果描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ELITE_RHOMPHAIA_WARRIOR</code></td>
+<td align="right">1301</td>
+<td>精锐长柄逆刃刀战士</td>
+<td>升级到精锐长柄逆刃刀战士：升级你的长柄逆刃刀战士，生产更为强大的精锐长柄逆刃刀战士。</td>
+</tr>
+<tr>
+<td><code>TECH_VADH_VADHA</code></td>
+<td align="right">1307</td>
+<td>践踏屠戮</td>
+<td>研究践踏屠戮 (桑纳哈亚提升了践踏伤害；禁用叶头箭杆)</td>
+</tr>
+<tr>
+<td><code>TECH_LEAF_HEADED_SHAFTS</code></td>
+<td align="right">1308</td>
+<td>叶头箭杆</td>
+<td>研究叶头箭杆 (帕提尤达长弓兵提升了近距伤害；禁用践踏屠戮)</td>
+</tr>
+<tr>
+<td><code>TECH_VEDIC_TEACHINGS</code></td>
+<td align="right">1309</td>
+<td>吠陀教义</td>
+<td>研究吠陀教义 (翰林院研究的每项科技都会使村民的工作效率 +2% [最大 20%]；禁用斯坎达瓦拉斯堡垒)</td>
+</tr>
+<tr>
+<td><code>TECH_SKANDHAVARAS</code></td>
+<td align="right">1310</td>
+<td>斯坎达瓦拉斯堡垒</td>
+<td>研究斯坎达瓦拉斯堡垒 (堡垒可以使用炮台进行单独升级；禁用吠陀教义)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_PATTIYODHA_LONGBOWMAN</code></td>
+<td align="right">1326</td>
+<td>精锐帕提尤达长弓兵</td>
+<td>升级到精锐帕提尤达长弓兵：升级你的帕提尤达长弓兵，生产更为强大的精锐帕提尤达长弓兵。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_SANN_HYA</code></td>
+<td align="right">1328</td>
+<td>精锐桑纳哈亚</td>
+<td>升级到精锐桑纳哈亚：升级你的桑纳哈亚，生产更为强大的精锐桑纳哈亚。</td>
+</tr>
+<tr>
+<td><code>TECH_CHAMPI_SCOUT</code></td>
+<td align="right">1350</td>
+<td>蔷琵斥候</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>TECH_CHAMPI_WARRIOR</code></td>
+<td align="right">1351</td>
+<td>蔷琵战士</td>
+<td>升级到蔷琵战士：升级你的蔷琵步兵，并让你可以生产更为强大、护甲更好的蔷琵战士。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_CHAMPI_WARRIOR</code></td>
+<td align="right">1352</td>
+<td>精锐蔷琵战士</td>
+<td>升级到精锐蔷琵战士：升级你的蔷琵战士，并让你可以生产更为强大，护甲更好的精锐蔷琵战士。</td>
+</tr>
+<tr>
+<td><code>TECH_ANTIQUITY_MODE_MERCHANT_TRADE_RATES_4</code></td>
+<td align="right">1359</td>
+<td>古代模式商人交易费用</td>
+<td>可切换科技组组内第 4&#x2F;5 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_GUECHA_WARRIOR</code></td>
+<td align="right">1364</td>
+<td>精锐格查战士</td>
+<td>升级到精锐格查战士：升级你的格查战士，并让你可以生产更为强大的精锐格查战士。</td>
+</tr>
+<tr>
+<td><code>TECH_HERBALISM</code></td>
+<td align="right">1365</td>
+<td>草药学</td>
+<td>研究草药医学 (弓兵系和蔷琵战士的移动速度 +15%)</td>
+</tr>
+<tr>
+<td><code>TECH_HUARACAS</code></td>
+<td align="right">1366</td>
+<td>瓦拉卡斯</td>
+<td>研究瓦拉卡斯 (投石手射程 +1；训练速度 +50%)</td>
+</tr>
+<tr>
+<td><code>TECH_ANTIQUITY_MODE_MERCHANT_TRADE_RATES_5</code></td>
+<td align="right">1373</td>
+<td>古代模式商人交易费用</td>
+<td>可切换科技组组内第 5&#x2F;5 个 [重名]</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_KONA</code></td>
+<td align="right">1376</td>
+<td>精锐科那</td>
+<td>升级到精锐科那：升级你的科那，并让你可以生产更为强大，护甲更好的精锐科那。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_BOLAS_RIDER</code></td>
+<td align="right">1378</td>
+<td>精锐掷石绳骑兵</td>
+<td>升级到精锐掷石绳骑兵</td>
+</tr>
+<tr>
+<td><code>TECH_MALON</code></td>
+<td align="right">1379</td>
+<td>突袭</td>
+<td>研究 Malon (突袭) (掷石绳骑兵、投石手和掷矛手可造成穿透伤害)</td>
+</tr>
+<tr>
+<td><code>TECH_BUTALMAPU</code></td>
+<td align="right">1380</td>
+<td>布图马普</td>
+<td>研究布图马普 (团队城堡独特单位及掷石绳骑兵成本 -15%)</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_BLACKWOOD_ARCHER</code></td>
+<td align="right">1389</td>
+<td>精锐黑檀木步弓手</td>
+<td>升级到精锐黑檀木步弓手：升级你的黑檀木步弓手升级，并让你可以生产更为强大的精锐黑檀木步弓手。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_IBIRAPEMA_WARRIOR</code></td>
+<td align="right">1391</td>
+<td>精锐伊比拉贝玛战士</td>
+<td>升级到精锐伊比拉贝玛战士：升级你的伊比拉贝玛战士，并让你可以生产更为强大的精锐伊比拉贝玛战士。</td>
+</tr>
+<tr>
+<td><code>TECH_CACIQUES</code></td>
+<td align="right">1392</td>
+<td>卡西克</td>
+<td>研究卡西克 (蔷琵战士和投石手攻击速度 +25%)</td>
+</tr>
+<tr>
+<td><code>TECH_CURARE</code></td>
+<td align="right">1393</td>
+<td>箭毒</td>
+<td>研究箭毒：步弓手和防御工事可造成中毒伤害。</td>
+</tr>
+</tbody></table>
+<p><strong>ID 1400 – 1496（16 条）</strong></p>
+<table>
+<thead>
+<tr>
+<th>常量名</th>
+<th align="right">techID</th>
+<th>科技名称</th>
+<th>效果描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TECH_ELITE_TEMPLE_GUARD</code></td>
+<td align="right">1401</td>
+<td>精锐神庙护卫</td>
+<td>升级到精锐神庙护卫：升级你的神庙护卫，并让你可以生产更为强大的精锐神庙护卫。</td>
+</tr>
+<tr>
+<td><code>TECH_CHAMPI_RUNNER</code></td>
+<td align="right">1402</td>
+<td>蔷琵步兵</td>
+<td>升级到蔷琵步兵：升级你的蔷琵侦察兵，并让你可以生产更为强大、护甲更好的蔷琵步兵。</td>
+</tr>
+<tr>
+<td><code>TECH_CIRCUM_NAVIGATION</code></td>
+<td align="right">1404</td>
+<td>环游世界</td>
+<td>研究环游世界：将整个地图设置为已探索；船只训练速度 +33%。</td>
+</tr>
+<tr>
+<td><code>TECH_H_MOUNTED_CROSSBOWMAN</code></td>
+<td align="right">1451</td>
+<td>重装骑马弩兵</td>
+<td>升级为重装骑马弩兵：升级你的骑马弩兵，让你可以生产更为强大的重装骑马弩兵。</td>
+</tr>
+<tr>
+<td><code>TECH_CRANEQUINS</code></td>
+<td align="right">1452</td>
+<td>便携弯弩装置</td>
+<td>研究便携弯弩装置：骑马弩兵的射程 +1；对步兵的攻击 +2。</td>
+</tr>
+<tr>
+<td><code>TECH_E_VARANGIAN_GUARD</code></td>
+<td align="right">1454</td>
+<td>精锐瓦兰吉卫队</td>
+<td>升级为精锐瓦兰吉卫队：升级你的瓦兰吉卫队，让你可以生产更强大的精锐瓦兰吉卫队。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_HEARTH_TROOP</code></td>
+<td align="right">1462</td>
+<td>精锐扈从部队</td>
+<td>升级为精锐扈从部队：升级你的扈从部队，让你可以生产更强大的精锐扈从部队。</td>
+</tr>
+<tr>
+<td><code>TECH_SHIELD_WALL</code></td>
+<td align="right">1464</td>
+<td>盾墙</td>
+<td>研究盾墙：步兵成群时获得额外的护甲。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_JARL</code></td>
+<td align="right">1472</td>
+<td>精锐首领</td>
+<td>升级为精锐首领：升级你的首领，让你可以生产更强大的精锐首领。</td>
+</tr>
+<tr>
+<td><code>TECH_VENDEL_LEGACY</code></td>
+<td align="right">1473</td>
+<td>文德尔传承</td>
+<td>研究文德尔传承：骑士系造成践踏伤害。</td>
+</tr>
+<tr>
+<td><code>TECH_GOTHIKON</code></td>
+<td align="right">1474</td>
+<td>哥瑟砍</td>
+<td>研究哥瑟砍：瓦兰吉卫队定期投掷斧头。</td>
+</tr>
+<tr>
+<td><code>TECH_ELITE_JOMSVIKING</code></td>
+<td align="right">1482</td>
+<td>精锐约姆斯维京</td>
+<td>升级为精锐约姆斯维京：升级你的约姆斯维京，让你可以生产更强大的精锐约姆斯维京。</td>
+</tr>
+<tr>
+<td><code>TECH_NORTHMEN_S_FURY</code></td>
+<td align="right">1483</td>
+<td>北方人之怒</td>
+<td>研究北方人之怒：投石车系和大型投石战舰的射程 +1；攻城武器和攻城战船对建筑的攻击 +40%。</td>
+</tr>
+<tr>
+<td><code>TECH_HAMASK</code></td>
+<td align="right">1484</td>
+<td>哈马思克</td>
+<td>研究哈马思克：步兵失去生命值时可造成更多伤害。</td>
+</tr>
+<tr>
+<td><code>TECH_CLERICAL_RECRUITMENT</code></td>
+<td align="right">1491</td>
+<td>神职人员招募</td>
+<td>研究神职人员招募：僧侣的招降射程 +1；训练速度 +33%。</td>
+</tr>
+<tr>
+<td><code>TECH_ORDONNANCE_COMPANIES</code></td>
+<td align="right">1496</td>
+<td>王家敕令骑兵</td>
+<td>研究王家敕令骑兵：骑马弩兵花费的黄金 -40%。</td>
+</tr>
+</tbody></table>
+</div><div class="index-category-tag"><div class="level-item"><i class="fas fa-folder-open has-text-grey"> </i><a class="article-more button is-small link-muted index-categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></div>  <div class="level-item"><i class="fas fa-tags has-text-grey"> </i><a class="article-more button is-small link-muted index-tags" href="/tags/%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32/">帝国时代2</a><span> </span><a class="article-more button is-small link-muted index-tags" href="/tags/%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE/">游戏数据</a><span> </span><a class="article-more button is-small link-muted index-tags" href="/tags/XS/">XS</a></div><hr></div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><!--!--><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="youkucola"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">youkucola</p><p class="is-size-6 is-block">一名 Java 开发者 &amp; Bukkit开发者</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>上海</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Seiten</p><a href="/archives/"><p class="title">10</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Kategorien</p><a href="/categories/"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">13</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/youkucola" target="_blank" rel="noopener">Folgen</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/youkucola"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:youkucola@outlook.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"From《"+data.from+"》</p><p>Provider-"+data.creator+"</p>");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><!--!--><div class="card widget"><div class="card-content"><h3 class="menu-label">Letzte Einträge</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-03T07:54:37.000Z">2026-11-03</time></p><p class="title"><a href="/2026/11/03/2026-11-03-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E7%A7%91%E6%8A%80ID%E5%AE%8C%E6%95%B4%E5%AF%B9%E7%85%A7%E8%A1%A8/">帝国时代2 决定版 科技 ID 完整对照表（399 条）</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-10-30T07:25:00.000Z">2026-10-30</time></p><p class="title"><a href="/2026/10/30/2026-10-30-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E6%88%98%E5%BD%B9%E4%B8%80%E8%A7%88/">帝国时代2 决定版 战役一览</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-10-20T06:40:00.000Z">2026-10-20</time></p><p class="title"><a href="/2026/10/20/2026-10-20-%E7%94%A8AoE2ScenarioParser%E7%BB%99%E5%AE%98%E6%96%B9%E6%88%98%E5%BD%B9%E5%BC%80%E5%90%AF256x%E7%A7%91%E6%8A%80/">用AoE2ScenarioParser给官方战役开启256x科技</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-10-20T05:35:00.000Z">2026-10-20</time></p><p class="title"><a href="/2026/10/20/2026-10-20-%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32%E5%86%B3%E5%AE%9A%E7%89%88%E4%BF%AE%E6%94%B9x256%E7%8E%A9%E5%AE%B6%E7%94%9F%E6%95%88/">帝国时代2决定版修改x256玩家生效</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-06-07T16:00:00.000Z">2026-06-08</time></p><p class="title"><a href="/2026/06/08/cloudflare-temp-mail-deploy-guide/">从阿里云迁移域名到 Cloudflare 并部署临时邮箱</a></p><p class="categories"><a href="/categories/%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/">部署笔记</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Kategorien</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">技术分享</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"><span class="level-start"><span class="level-item">未分类</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">部署笔记</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archive</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2026/11/"><span class="level-start"><span class="level-item">November 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2026/10/"><span class="level-start"><span class="level-item">October 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2026/06/"><span class="level-start"><span class="level-item">June 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2024/08/"><span class="level-start"><span class="level-item">August 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2024/07/"><span class="level-start"><span class="level-item">July 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><a class="level is-mobile is-marginless" href="/archives/"><span class="level-start"><span class="level-item">查看全部&gt;&gt;</span></span></a></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%E5%B8%9D%E5%9B%BD%E6%97%B6%E4%BB%A32/"><span class="tag">帝国时代2</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B8%B8%E6%88%8F%E4%BF%AE%E6%94%B9/"><span class="tag">游戏修改</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE/"><span class="tag">游戏数据</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Cloudflare/"><span class="tag">Cloudflare</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/D1/"><span class="tag">D1</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/DSM/"><span class="tag">DSM</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Java/"><span class="tag">Java</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Pages/"><span class="tag">Pages</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Workers/"><span class="tag">Workers</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/XS/"><span class="tag">XS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/pip/"><span class="tag">pip</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%9F%9F%E5%90%8D/"><span class="tag">域名</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Abonnieren Sie Updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Abonnieren"></div></div></form></div></div></div><!--!--></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="size-small"><span>&copy; 2026 youkucola</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a> &amp; <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">Amazing</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️Site from <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> has existed <strong>" + dnum + "</strong> d <strong>" + hnum + "</strong> h <strong>" + mnum + "</strong> m <strong>" + snum + "</strong> s！❤️";
+        }var now = new Date();setInterval("createTime('2026/4/12 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️Thx <strong><span id="busuanzi_value_site_uv">99+</span></strong> users <strong><span id="busuanzi_value_site_pv">99+</span></strong> visited！❤️</span></div></p></div><div class="level-end"></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script><script>moment.locale("zh");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Zurück nach oben" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Tippen Sie etwas..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Tippen Sie etwas...","untitled":"(Ohne Titel)","posts":"Seiten","pages":"Pages","categories":"Kategorien","tags":"Tags"});
+        });</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script><script type="text/javascript">var pjax = new Pjax({
+            elements: "a",//代表点击链接就更新
+            selectors: [  //代表要更新的节点
+                ".section",
+                "title"
+            ],
+            cache: true,
+            cacheBust:false
+        })
+
+        function loadBusuanzi(){
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js", function () {});
+        }
+
+        function loadMathJax() { //加载mathjax
+            $.getScript("//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML", function () {
+                MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\(', '\)']] } });
+                var math = document.getElementsByClassName("entry-content")[0];
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
+            });
+        };
+
+        // 开始 PJAX 执行的函数
+        document.addEventListener('pjax:send', function () {
+        });
+        
+        // PJAX 完成之后执行的函数，可以和上面的重载放在一起
+        document.addEventListener('pjax:complete', function () {
+            $(".section").css({opacity:1});
+            if(false){
+                $.getScript('/js/comment-issue-data.js',function(){loadIssueData('undefined','undefined','undefined','undefined',undefined);});
+            }
+            if(false){
+                loadMathJax();
+            }
+            loadMainJs(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings);
+            loadBackTop();
+            loadBusuanzi();
+            if(typeof loadBanner == 'function'){
+                loadBanner();
+            }
+        });</script></body></html>
